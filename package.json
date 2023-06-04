@@ -1,0 +1,15 @@
+{
+  "name": "islomota-uz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+		"build-css": "npx tailwindcss -i ./css/tailwind.css -o ./css/min.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
