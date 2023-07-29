@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	[x-cloak] {
+		@apply hidden;
+	}
+
+	html,
+	body {
+		@apply h-full;
+	}
+
+	.bd{
+		border: 1px solid #f00;
+	}
+
+	body {
+		@apply m-0 p-0 text-body text-sm leading-relaxed font-montserrat antialiased;
+
+		background: url(../img/bg.jpg) 0 0 repeat;
+	}
+
+	h1, h2, h3{
+		@apply font-playfair font-medium;
+	}
+
+	#container {
+		@apply flex flex-col min-h-full;
+	}
+
+	.container{
+		@apply 2xl-down:max-w-full px-6;
+	}
+
+	.main {
+		@apply grow;
+	}
+
+	.footer {
+		@apply shrink-0;
+	}
+}
+
+/*Swiper functionality*/
+/*.world-news .swiper,
+.uzb-news .swiper {
+	padding-bottom: 81px !important;
+}
+
+.swiper-pagination-bullet-active {
+	width: 16px !important;
+	height: 16px !important;
+	background: linear-gradient(0deg, rgba(102, 102, 102, 0.2), rgba(102, 102, 102, 0.2)), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+}
+
+.world-news .swiper-pagination,
+.uzb-news .swiper-pagination {
+	@apply h-5;
+}
+
+.swiper-pagination-bullet {
+	@apply opacity-100 w-2 h-2 transition-all;
+	background: linear-gradient(0deg, rgba(102, 102, 102, 0.2), rgba(102, 102, 102, 0.2)), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+}*/

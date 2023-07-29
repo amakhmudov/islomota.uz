@@ -1,100 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- fonts link -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair&display=swap" rel="stylesheet">
-	<!-- swiper css link -->
-	<link rel="stylesheet" href="css/swiper-bundle.min.css">
-	<!-- tailwind css link -->
-	<link rel="stylesheet" href="css/min.css">
-	<title>Islomota uz</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+	<script defer src="js/swiper-bundle.min.js"></script>
+	<!-- <script src="js/script.js"></script> -->
+	<title>Islomota.uz | Bosh sahifa</title>
 </head>
 
 <body>
-
-
 	<div id="container">
-		<!-- header start -->
-		<header class="header">
-			<div class="bg-white border-b border-gray/20 py-4 text-gray text-xs font-medium">
+		<header class="header text-body-light">
+			<div class="py-4 text-xs bg-white border-b border-body/20">
 				<div class="container">
 					<div class="flex items-center justify-between">
 						<div class="flex items-center space-x-2">
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-								stroke="currentColor" class="w-4 h-4">
-								<path stroke-linecap="round" stroke-linejoin="round"
-									d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M10 5V10H13.75M17.5 10C17.5 10.9849 17.306 11.9602 16.9291 12.8701C16.5522 13.7801 15.9997 14.6069 15.3033 15.3033C14.6069 15.9997 13.7801 16.5522 12.8701 16.9291C11.9602 17.306 10.9849 17.5 10 17.5C9.01509 17.5 8.03982 17.306 7.12987 16.9291C6.21993 16.5522 5.39314 15.9997 4.6967 15.3033C4.00026 14.6069 3.44781 13.7801 3.0709 12.8701C2.69399 11.9602 2.5 10.9849 2.5 10C2.5 8.01088 3.29018 6.10322 4.6967 4.6967C6.10322 3.29018 8.01088 2.5 10 2.5C11.9891 2.5 13.8968 3.29018 15.3033 4.6967C16.7098 6.10322 17.5 8.01088 17.5 10Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
 							</svg>
 							<span>Seshanba, May 9 - 2023</span>
 						</div>
-						<div class="flex items-center divide-x divide-gray/20">
-							<div class="flex items-center space-x-2 relative pr-6 xs-down:pr-3 xs-down:space-x-0">
-								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M6.61667 11.2C6.04333 11.15 5.46167 11.125 4.875 11.125H4.25C3.25544 11.125 2.30161 10.7299 1.59835 10.0267C0.895088 9.32339 0.5 8.36956 0.5 7.375C0.5 6.38044 0.895088 5.42661 1.59835 4.72335C2.30161 4.02009 3.25544 3.625 4.25 3.625H4.875C5.46167 3.625 6.04333 3.6 6.61667 3.55M6.61667 11.2C6.8275 12.0017 7.10333 12.7767 7.4375 13.5192C7.64333 13.9775 7.4875 14.5275 7.05167 14.7783L6.50417 15.095C6.045 15.36 5.45417 15.1925 5.23167 14.7108C4.70358 13.5684 4.30121 12.3719 4.03167 11.1425M6.61667 11.2C6.28915 9.95141 6.1239 8.66583 6.125 7.375C6.125 6.05333 6.29583 4.77167 6.61667 3.55M6.61667 11.2C9.1846 11.4201 11.6852 12.1376 13.9792 13.3125M6.61667 3.55C9.1846 3.32993 11.6852 2.61244 13.9792 1.4375M13.9792 13.3125C13.8808 13.6292 13.775 13.9408 13.6625 14.25M13.9792 13.3125C14.4325 11.8513 14.716 10.3427 14.8242 8.81667M13.9792 1.4375C13.8814 1.12241 13.7759 0.809811 13.6625 0.5M13.9792 1.4375C14.4325 2.8987 14.716 4.40725 14.8242 5.93333M14.8242 5.93333C15.2367 6.2775 15.5 6.79583 15.5 7.375C15.5 7.95417 15.2367 8.4725 14.8242 8.81667M14.8242 5.93333C14.8925 6.89323 14.8925 7.85677 14.8242 8.81667"
-										stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-								<div class="flex cursor-pointer space-x-2 open-dropdown-btn">
-									<span class="xs-down:hidden">Namoz vaqtlari</span>
-									<button class="bottom-arrow transition-all">
-										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M8.75 1.125L5 4.875L1.25 1.125" stroke="#666666" stroke-linecap="round"
-												stroke-linejoin="round" />
-										</svg>
-									</button>
-								</div>
-								<ul role="list"
-									class="dropdown-box w-56 snap-y hidden p-5 z-40 divide-y divide-slate-200 bg-white shadow-2xl absolute right-0 rounded-lg top-7 text-sm">
-									<li class="flex py-4 first:pt-0 last:pb-0">Lorem ipsum dolor sit</li>
-									<li class="flex py-4 first:pt-0 last:pb-0">Lorem</li>
+						<div class="flex items-center divide-x divide-body/20">
+							<div x-data="{isOpen: false}" class="relative pr-6">
+								<button x-on:click="isOpen = true" class="flex items-center space-x-2">
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M6.61667 11.2C6.04333 11.15 5.46167 11.125 4.875 11.125H4.25C3.25544 11.125 2.30161 10.7299 1.59835 10.0267C0.895088 9.32339 0.5 8.36956 0.5 7.375C0.5 6.38044 0.895088 5.42661 1.59835 4.72335C2.30161 4.02009 3.25544 3.625 4.25 3.625H4.875C5.46167 3.625 6.04333 3.6 6.61667 3.55M6.61667 11.2C6.8275 12.0017 7.10333 12.7767 7.4375 13.5192C7.64333 13.9775 7.4875 14.5275 7.05167 14.7783L6.50417 15.095C6.045 15.36 5.45417 15.1925 5.23167 14.7108C4.70358 13.5684 4.30121 12.3719 4.03167 11.1425M6.61667 11.2C6.28915 9.95141 6.1239 8.66583 6.125 7.375C6.125 6.05333 6.29583 4.77167 6.61667 3.55M6.61667 11.2C9.1846 11.4201 11.6852 12.1376 13.9792 13.3125M6.61667 3.55C9.1846 3.32993 11.6852 2.61244 13.9792 1.4375M13.9792 13.3125C13.8808 13.6292 13.775 13.9408 13.6625 14.25M13.9792 13.3125C14.4325 11.8513 14.716 10.3427 14.8242 8.81667M13.9792 1.4375C13.8814 1.12241 13.7759 0.809811 13.6625 0.5M13.9792 1.4375C14.4325 2.8987 14.716 4.40725 14.8242 5.93333M14.8242 5.93333C15.2367 6.2775 15.5 6.79583 15.5 7.375C15.5 7.95417 15.2367 8.4725 14.8242 8.81667M14.8242 5.93333C14.8925 6.89323 14.8925 7.85677 14.8242 8.81667" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+									<span>Namoz vaqtlari</span>
+									<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.75 4.125L6 7.875L2.25 4.125" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+								<ul x-cloak x-show="isOpen" x-on:click.outside="isOpen = false" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90" class="absolute z-10 top-full mt-2 right-0 bg-white rounded-lg w-56 p-2.5 border border-body-light/20 divide-y shadow-md transition">
+									<li>
+										<a href="#" class="py-2 block hover:text-body transition">Tong</a>
+									</li>
+									<li>
+										<a href="#" class="py-2 block hover:text-body transition">Quyosh</a>
+									</li>
+									<li>
+										<a href="#" class="py-2 block hover:text-body transition">Peshin</a>
+									</li>
+									<li>
+										<a href="#" class="py-2 block hover:text-body transition">Asr</a>
+									</li>
+									<li>
+										<a href="#" class="py-2 block hover:text-body transition">Shom</a>
+									</li>
+									<li>
+										<a href="#" class="py-2 block hover:text-body transition">Xufton</a>
+									</li>
 								</ul>
 							</div>
-							<div class="flex items-center space-x-3 pl-6 xs-down:pl-2">
-								<span class="md-middle:hidden">Bizni kuzating:</span>
-								<div class="md-middle:hidden md-middle:absolute md-middle:bottom-3 md-middle:left-3 z-30 social-media">
-									<div class="flex items-center space-x-4">
-										<a href="#!">
-											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M20 10.0609C20 4.53835 15.5225 0.0608521 10 0.0608521C4.4775 0.0608521 0 4.53835 0 10.0609C0 15.0525 3.65667 19.1892 8.4375 19.9392V12.9517H5.89833V10.06H8.4375V7.85835C8.4375 5.35252 9.93083 3.96752 12.215 3.96752C13.3083 3.96752 14.4533 4.16335 14.4533 4.16335V6.62419H13.1917C11.9492 6.62419 11.5617 7.39502 11.5617 8.18585V10.0609H14.335L13.8917 12.9525H11.5617V19.94C16.3433 19.1892 20 15.0517 20 10.0609Z"
-													fill="#666666" />
-											</svg>
-										</a>
-										<a href="#!">
-											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M10 0C7.28333 0 6.94417 0.0125 5.8775 0.06C4.8125 0.11 4.0875 0.2775 3.45 0.525C2.7925 0.78 2.23417 1.1225 1.67833 1.67833C1.1225 2.23417 0.779167 2.79167 0.525 3.45C0.2775 4.0875 0.109167 4.8125 0.06 5.8775C0.01 6.94417 0 7.28333 0 10C0 12.7167 0.0125 13.0558 0.06 14.1225C0.11 15.1867 0.2775 15.9125 0.525 16.55C0.78 17.2067 1.1225 17.7658 1.67833 18.3217C2.23417 18.8767 2.79167 19.2208 3.45 19.475C4.08833 19.7217 4.81333 19.8908 5.8775 19.94C6.94417 19.99 7.28333 20 10 20C12.7167 20 13.0558 19.9875 14.1225 19.94C15.1867 19.89 15.9125 19.7217 16.55 19.475C17.2067 19.22 17.7658 18.8767 18.3217 18.3217C18.8767 17.7658 19.2208 17.2092 19.475 16.55C19.7217 15.9125 19.8908 15.1867 19.94 14.1225C19.99 13.0558 20 12.7167 20 10C20 7.28333 19.9875 6.94417 19.94 5.8775C19.89 4.81333 19.7217 4.08667 19.475 3.45C19.22 2.7925 18.8767 2.23417 18.3217 1.67833C17.7658 1.1225 17.2092 0.779167 16.55 0.525C15.9125 0.2775 15.1867 0.109167 14.1225 0.06C13.0558 0.01 12.7167 0 10 0ZM10 1.8C12.6692 1.8 12.9875 1.81333 14.0417 1.85917C15.0167 1.905 15.5458 2.06667 15.8975 2.205C16.3658 2.38583 16.6975 2.6025 17.0492 2.95167C17.3983 3.30167 17.615 3.63417 17.7958 4.1025C17.9325 4.45417 18.0958 4.98333 18.14 5.95833C18.1875 7.01333 18.1983 7.33 18.1983 10C18.1983 12.67 18.1858 12.9875 18.1367 14.0417C18.0858 15.0167 17.9233 15.5458 17.7858 15.8975C17.5992 16.3658 17.3867 16.6975 17.0367 17.0492C16.6875 17.3983 16.35 17.615 15.8867 17.7958C15.5367 17.9325 14.9992 18.0958 14.0242 18.14C12.9625 18.1875 12.65 18.1983 9.975 18.1983C7.29917 18.1983 6.98667 18.1858 5.92583 18.1367C4.95 18.0858 4.4125 17.9233 4.0625 17.7858C3.58833 17.5992 3.2625 17.3867 2.91333 17.0367C2.5625 16.6875 2.33833 16.35 2.16333 15.8867C2.02583 15.5367 1.86417 14.9992 1.81333 14.0242C1.77583 12.9742 1.7625 12.65 1.7625 9.9875C1.7625 7.32417 1.77583 6.99917 1.81333 5.93667C1.86417 4.96167 2.02583 4.425 2.16333 4.075C2.33833 3.6 2.5625 3.275 2.91333 2.92417C3.2625 2.575 3.58833 2.35 4.0625 2.17583C4.4125 2.0375 4.93833 1.875 5.91333 1.825C6.97583 1.7875 7.28833 1.775 9.9625 1.775L10 1.8ZM10 4.865C7.1625 4.865 4.865 7.165 4.865 10C4.865 12.8375 7.165 15.135 10 15.135C12.8375 15.135 15.135 12.835 15.135 10C15.135 7.1625 12.835 4.865 10 4.865ZM10 13.3333C8.15833 13.3333 6.66667 11.8417 6.66667 10C6.66667 8.15833 8.15833 6.66667 10 6.66667C11.8417 6.66667 13.3333 8.15833 13.3333 10C13.3333 11.8417 11.8417 13.3333 10 13.3333ZM16.5383 4.6625C16.5383 5.325 16 5.8625 15.3383 5.8625C14.6758 5.8625 14.1383 5.32417 14.1383 4.6625C14.1383 4.00083 14.6767 3.46333 15.3383 3.46333C15.9992 3.4625 16.5383 4.00083 16.5383 4.6625Z"
-													fill="#666666" />
-											</svg>
-										</a>
-										<a href="#!">
-											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M9.95333 2.72223e-05C7.30926 0.0123664 4.7777 1.07138 2.91241 2.94541C1.04713 4.81944 -2.87909e-05 7.35593 5.93696e-10 10C5.937e-10 12.6522 1.05357 15.1957 2.92893 17.0711C4.8043 18.9465 7.34784 20 10 20C12.6522 20 15.1957 18.9465 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 7.34786 18.9464 4.80432 17.0711 2.92896C15.1957 1.0536 12.6522 2.72223e-05 10 2.72223e-05C9.98444 -9.07409e-06 9.96889 -9.07409e-06 9.95333 2.72223e-05ZM14.0883 6.02003C14.1717 6.01836 14.3558 6.03919 14.4758 6.13669C14.5556 6.20594 14.6064 6.30259 14.6183 6.40753C14.6317 6.48503 14.6483 6.66253 14.635 6.80086C14.485 8.38253 13.8333 12.2192 13.5017 13.99C13.3617 14.74 13.0858 14.9909 12.8183 15.015C12.2383 15.0692 11.7975 14.6317 11.235 14.2634C10.355 13.6859 9.8575 13.3267 9.00333 12.7634C8.01583 12.1134 8.65583 11.755 9.21833 11.1717C9.36583 11.0184 11.9242 8.69086 11.9742 8.48003C11.98 8.45336 11.9858 8.35503 11.9275 8.30336C11.8692 8.25169 11.7825 8.26919 11.72 8.28336C11.6317 8.30336 10.2258 9.23336 7.5025 11.0709C7.1025 11.3459 6.74167 11.4792 6.4175 11.4709C6.06083 11.4642 5.37417 11.27 4.86333 11.1042C4.23667 10.9 3.73917 10.7925 3.7825 10.4467C3.805 10.2667 4.05333 10.0825 4.52667 9.89419C7.44167 8.62419 9.385 7.78669 10.3583 7.38253C13.135 6.22753 13.7125 6.02669 14.0883 6.02003Z"
-													fill="#666666" />
-											</svg>
-										</a>
-										<a href="#!">
-											<svg width="20px" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M19.5817 2.20083C19.4687 1.77523 19.2459 1.38678 18.9355 1.07439C18.6252 0.761992 18.2382 0.536618 17.8133 0.420833C16.2542 9.93411e-08 10 0 10 0C10 0 3.74583 9.93411e-08 2.18583 0.420833C1.76117 0.536822 1.37441 0.762278 1.06423 1.07465C0.754051 1.38703 0.531326 1.77537 0.418333 2.20083C0 3.77083 0 7.04583 0 7.04583C0 7.04583 0 10.3208 0.418333 11.8908C0.531322 12.3164 0.754146 12.7049 1.06449 13.0173C1.37484 13.3297 1.76181 13.555 2.18667 13.6708C3.74583 14.0917 10 14.0917 10 14.0917C10 14.0917 16.2542 14.0917 17.8142 13.6708C18.2391 13.5551 18.6261 13.3298 18.9364 13.0174C19.2468 12.705 19.4696 12.3165 19.5825 11.8908C20 10.3208 20 7.04583 20 7.04583C20 7.04583 20 3.77083 19.5817 2.20083ZM7.95417 10.0192V4.0725L13.1817 7.04583L7.95417 10.0192Z"
-													fill="#666666" />
-											</svg>
-										</a>
-									</div>
+							<div class="flex items-center space-x-2 pl-6">
+								<span>Bizni kuzating:</span>
+								<div class="flex items-center space-x-3">
+									<a href="#">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M20 10.0609C20 4.53835 15.5225 0.0608521 10 0.0608521C4.4775 0.0608521 0 4.53835 0 10.0609C0 15.0525 3.65667 19.1892 8.4375 19.9392V12.9517H5.89833V10.06H8.4375V7.85835C8.4375 5.35252 9.93083 3.96752 12.215 3.96752C13.3083 3.96752 14.4533 4.16335 14.4533 4.16335V6.62419H13.1917C11.9492 6.62419 11.5617 7.39502 11.5617 8.18585V10.0609H14.335L13.8917 12.9525H11.5617V19.94C16.3433 19.1892 20 15.0517 20 10.0609Z" fill="currentColor" />
+										</svg>
+									</a>
+									<a href="#">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M10 0C7.28333 0 6.94417 0.0125 5.8775 0.06C4.8125 0.11 4.0875 0.2775 3.45 0.525C2.7925 0.78 2.23417 1.1225 1.67833 1.67833C1.1225 2.23417 0.779167 2.79167 0.525 3.45C0.2775 4.0875 0.109167 4.8125 0.06 5.8775C0.01 6.94417 0 7.28333 0 10C0 12.7167 0.0125 13.0558 0.06 14.1225C0.11 15.1867 0.2775 15.9125 0.525 16.55C0.78 17.2067 1.1225 17.7658 1.67833 18.3217C2.23417 18.8767 2.79167 19.2208 3.45 19.475C4.08833 19.7217 4.81333 19.8908 5.8775 19.94C6.94417 19.99 7.28333 20 10 20C12.7167 20 13.0558 19.9875 14.1225 19.94C15.1867 19.89 15.9125 19.7217 16.55 19.475C17.2067 19.22 17.7658 18.8767 18.3217 18.3217C18.8767 17.7658 19.2208 17.2092 19.475 16.55C19.7217 15.9125 19.8908 15.1867 19.94 14.1225C19.99 13.0558 20 12.7167 20 10C20 7.28333 19.9875 6.94417 19.94 5.8775C19.89 4.81333 19.7217 4.08667 19.475 3.45C19.22 2.7925 18.8767 2.23417 18.3217 1.67833C17.7658 1.1225 17.2092 0.779167 16.55 0.525C15.9125 0.2775 15.1867 0.109167 14.1225 0.06C13.0558 0.01 12.7167 0 10 0ZM10 1.8C12.6692 1.8 12.9875 1.81333 14.0417 1.85917C15.0167 1.905 15.5458 2.06667 15.8975 2.205C16.3658 2.38583 16.6975 2.6025 17.0492 2.95167C17.3983 3.30167 17.615 3.63417 17.7958 4.1025C17.9325 4.45417 18.0958 4.98333 18.14 5.95833C18.1875 7.01333 18.1983 7.33 18.1983 10C18.1983 12.67 18.1858 12.9875 18.1367 14.0417C18.0858 15.0167 17.9233 15.5458 17.7858 15.8975C17.5992 16.3658 17.3867 16.6975 17.0367 17.0492C16.6875 17.3983 16.35 17.615 15.8867 17.7958C15.5367 17.9325 14.9992 18.0958 14.0242 18.14C12.9625 18.1875 12.65 18.1983 9.975 18.1983C7.29917 18.1983 6.98667 18.1858 5.92583 18.1367C4.95 18.0858 4.4125 17.9233 4.0625 17.7858C3.58833 17.5992 3.2625 17.3867 2.91333 17.0367C2.5625 16.6875 2.33833 16.35 2.16333 15.8867C2.02583 15.5367 1.86417 14.9992 1.81333 14.0242C1.77583 12.9742 1.7625 12.65 1.7625 9.9875C1.7625 7.32417 1.77583 6.99917 1.81333 5.93667C1.86417 4.96167 2.02583 4.425 2.16333 4.075C2.33833 3.6 2.5625 3.275 2.91333 2.92417C3.2625 2.575 3.58833 2.35 4.0625 2.17583C4.4125 2.0375 4.93833 1.875 5.91333 1.825C6.97583 1.7875 7.28833 1.775 9.9625 1.775L10 1.8ZM10 4.865C7.1625 4.865 4.865 7.165 4.865 10C4.865 12.8375 7.165 15.135 10 15.135C12.8375 15.135 15.135 12.835 15.135 10C15.135 7.1625 12.835 4.865 10 4.865ZM10 13.3333C8.15833 13.3333 6.66667 11.8417 6.66667 10C6.66667 8.15833 8.15833 6.66667 10 6.66667C11.8417 6.66667 13.3333 8.15833 13.3333 10C13.3333 11.8417 11.8417 13.3333 10 13.3333ZM16.5383 4.6625C16.5383 5.325 16 5.8625 15.3383 5.8625C14.6758 5.8625 14.1383 5.32417 14.1383 4.6625C14.1383 4.00083 14.6767 3.46333 15.3383 3.46333C15.9992 3.4625 16.5383 4.00083 16.5383 4.6625Z" fill="currentColor" />
+										</svg>
+									</a>
+									<a href="#">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.95333 2.72223e-05C7.30926 0.0123664 4.7777 1.07138 2.91241 2.94541C1.04713 4.81944 -2.87909e-05 7.35593 5.93696e-10 10C5.937e-10 12.6522 1.05357 15.1957 2.92893 17.0711C4.8043 18.9465 7.34784 20 10 20C12.6522 20 15.1957 18.9465 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 7.34786 18.9464 4.80432 17.0711 2.92896C15.1957 1.0536 12.6522 2.72223e-05 10 2.72223e-05C9.98444 -9.07409e-06 9.96889 -9.07409e-06 9.95333 2.72223e-05ZM14.0883 6.02003C14.1717 6.01836 14.3558 6.03919 14.4758 6.13669C14.5556 6.20594 14.6064 6.30259 14.6183 6.40753C14.6317 6.48503 14.6483 6.66253 14.635 6.80086C14.485 8.38253 13.8333 12.2192 13.5017 13.99C13.3617 14.74 13.0858 14.9909 12.8183 15.015C12.2383 15.0692 11.7975 14.6317 11.235 14.2634C10.355 13.6859 9.8575 13.3267 9.00333 12.7634C8.01583 12.1134 8.65583 11.755 9.21833 11.1717C9.36583 11.0184 11.9242 8.69086 11.9742 8.48003C11.98 8.45336 11.9858 8.35503 11.9275 8.30336C11.8692 8.25169 11.7825 8.26919 11.72 8.28336C11.6317 8.30336 10.2258 9.23336 7.5025 11.0709C7.1025 11.3459 6.74167 11.4792 6.4175 11.4709C6.06083 11.4642 5.37417 11.27 4.86333 11.1042C4.23667 10.9 3.73917 10.7925 3.7825 10.4467C3.805 10.2667 4.05333 10.0825 4.52667 9.89419C7.44167 8.62419 9.385 7.78669 10.3583 7.38253C13.135 6.22753 13.7125 6.02669 14.0883 6.02003Z" fill="currentColor" />
+										</svg>
+									</a>
+									<a href="#">
+										<svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M19.5817 2.20083C19.4687 1.77523 19.2459 1.38678 18.9355 1.07439C18.6252 0.761992 18.2382 0.536618 17.8133 0.420833C16.2542 9.93411e-08 10 0 10 0C10 0 3.74583 9.93411e-08 2.18583 0.420833C1.76117 0.536822 1.37441 0.762278 1.06423 1.07465C0.754051 1.38703 0.531326 1.77537 0.418333 2.20083C0 3.77083 0 7.04583 0 7.04583C0 7.04583 0 10.3208 0.418333 11.8908C0.531322 12.3164 0.754146 12.7049 1.06449 13.0173C1.37484 13.3297 1.76181 13.555 2.18667 13.6708C3.74583 14.0917 10 14.0917 10 14.0917C10 14.0917 16.2542 14.0917 17.8142 13.6708C18.2391 13.5551 18.6261 13.3298 18.9364 13.0174C19.2468 12.705 19.4696 12.3165 19.5825 11.8908C20 10.3208 20 7.04583 20 7.04583C20 7.04583 20 3.77083 19.5817 2.20083ZM7.95417 10.0192V4.0725L13.1817 7.04583L7.95417 10.0192Z" fill="currentColor" />
+										</svg>
+									</a>
 								</div>
-								<button class="open-menu__btn hidden md-middle:block">
-									<svg width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M12 12H27" stroke="#666" stroke-linecap="round" />
-										<path d="M12 16H27" stroke="#666" stroke-linecap="round" />
-										<path d="M12 20H27" stroke="#666" stroke-linecap="round" />
-										<rect x="0.25" y="0.25" width="39.5" height="31.5" rx="4.75" stroke="#666" stroke-width="0.5" />
+								<button class="hidden">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+										<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
 									</svg>
 								</button>
 							</div>
@@ -102,1183 +94,812 @@
 					</div>
 				</div>
 			</div>
-			<div class="container py-8 max-md:py-5 xs-down:py-5">
+			<div class="container py-8">
 				<div class="flex items-center justify-between">
-					<a href="#!" class="text-xl font-playfair font-normal">Islomota.uz</a>
-					<div class="flex items-center divide-x divide-gray/20 md-middle:divide-x-0">
-						<ul
-							class="nav pr-6 relative max-500:w-2/3  duration-500 flex z-10 items-center space-x-4 text-gray text-sm md-middle:-left-full md-middle:bg-white md-middle:h-screen md-middle:w-full md-middle:absolute md-middle:top-0 md-middle:flex-col md-middle:items-start md-middle:text-left md-middle:space-y-3 md-middle:space-x-0 md-middle:py-4 md-middle:pl-4">
-							<button class="close-menu__btn hidden md-middle:block absolute top-5 right-9 z-20">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-									stroke="currentColor" class="w-4 h-4">
-									<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-								</svg>
-							</button>
+					<a href="#" class="text-xl text-body font-playfair">Islomota.uz</a>
+					<nav class="flex items-center divide-x divide-body/20">
+						<ul class="flex items-center space-x-4 pr-6">
 							<li>
-								<a href="#!" class="">Bosh sahifa</a>
+								<a href="#" class="text-body underline">Bosh sahifa</a>
 							</li>
 							<li>
-								<a href="#!" class="hover:text-black">Yangiliklar</a>
+								<a href="#" class="hover:text-body transition">Yangiliklar</a>
 							</li>
 							<li>
-								<a href="#!" class="hover:text-black">Maqolalar</a>
+								<a href="#" class="hover:text-body transition">Maqolalar</a>
 							</li>
-							<li class="relative">
-								<p class="space-x-1 cursor-pointer hover:text-black flex items-center open-dropdown-btn">
-									<span>Islom</span>
-									<svg class="bottom-arrow transition-all" width="10" height="6" viewBox="0 0 10 6" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path d="M8.75 1.125L5 4.875L1.25 1.125" stroke="#666666" stroke-linecap="round"
-											stroke-linejoin="round" />
-									</svg>
-								</p>
-								<ul role="list"
-									class="dropdown-box w-56 snap-y hidden p-5 z-40 divide-y divide-slate-200 bg-white shadow-2xl absolute right-0 rounded-lg top-7 text-sm md-middle:left-0">
-									<li class="flex py-4 first:pt-0 last:pb-0">Lorem ipsum dolor sit</li>
-									<li class="flex py-4 first:pt-0 last:pb-0">Lorem</li>
-								</ul>
+							<li>
+								<div x-data="{isOpen: false}" class="flex items-center relative">
+									<a href="#" class="hover:text-body transition">Islom</a>
+									<button x-on:click="isOpen = true" class="p-2">
+										<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.75 4.125L6 7.875L2.25 4.125" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</button>
+									<ul x-cloak x-show="isOpen" x-on:click.outside="isOpen = false" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90" class="absolute z-10 top-full mt-2 right-0 bg-white rounded-lg w-36 p-2.5 border border-body-light/20 divide-y shadow-md transition">
+										<li>
+											<a href="#" class="py-2 block hover:text-body transition">Aqida</a>
+										</li>
+										<li>
+											<a href="#" class="py-2 block hover:text-body transition">Tafsir</a>
+										</li>
+										<li>
+											<a href="#" class="py-2 block hover:text-body transition">Fiqh</a>
+										</li>
+										<li>
+											<a href="#" class="py-2 block hover:text-body transition">Hadis</a>
+										</li>
+									</ul>
+								</div>
 							</li>
-							<li class="">
-								<a href="#!" class="hover:text-black">Masjid haqida</a>
+							<li>
+								<a href="#" class="hover:text-body transition">Masjid haqida</a>
 							</li>
-							<li class="relative">
-								<p class="cursor-pointer hover:text-black flex items-center open-dropdown-btn space-x-1">
-									<span class="">Multimedia</span>
-									<svg class="bottom-arrow transition-all" width="10" height="6" viewBox="0 0 10 6" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path d="M8.75 1.125L5 4.875L1.25 1.125" stroke="#666666" stroke-linecap="round"
-											stroke-linejoin="round" />
-									</svg>
-								</p>
-								<ul role="list"
-									class="dropdown-box w-56 snap-y hidden p-5 z-40 divide-y divide-slate-200 bg-white shadow-2xl absolute right-0 rounded-lg top-7 text-sm md-middle:left-0">
-									<li class="flex py-4 first:pt-0 last:pb-0">Lorem ipsum dolor sit</li>
-									<li class="flex py-4 first:pt-0 last:pb-0">Lorem</li>
-								</ul>
+							<li>
+								<div x-data="{isOpen: false}" class="flex items-center relative">
+									<a href="#" class="hover:text-body transition">Multimedia</a>
+									<button x-on:click="isOpen = true" class="p-2">
+										<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.75 4.125L6 7.875L2.25 4.125" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</button>
+									<ul x-cloak x-show="isOpen" x-on:click.outside="isOpen = false" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90" class="absolute z-10 top-full mt-2 right-0 bg-white rounded-lg w-36 p-2.5 border border-body-light/20 divide-y shadow-md transition">
+										<li>
+											<a href="#" class="py-2 block hover:text-body transition">Audiolar</a>
+										</li>
+										<li>
+											<a href="#" class="py-2 block hover:text-body transition">Videolavhalar</a>
+										</li>
+										<li>
+											<a href="#" class="py-2 block hover:text-body transition">Rasmlar</a>
+										</li>
+									</ul>
+								</div>
 							</li>
 						</ul>
-						<div class="cursor-pointer pl-6">
-							<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M20 20L17.1129 17.1129M17.1129 17.1129C17.8943 16.3315 18.3333 15.2717 18.3333 14.1666C18.3333 13.0616 17.8943 12.0018 17.1129 11.2204C16.3315 10.439 15.2717 10 14.1666 10C13.0616 10 12.0018 10.439 11.2204 11.2204C10.439 12.0018 10 13.0616 10 14.1666C10 15.2717 10.439 16.3315 11.2204 17.1129C12.0018 17.8943 13.0616 18.3333 14.1666 18.3333C15.2717 18.3333 16.3315 17.8943 17.1129 17.1129Z"
-									stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-								<circle cx="15" cy="15" r="11.5" stroke="#666666" />
-							</svg>
+						<div class="pl-6">
+							<button class="w-6 h-6 flex items-center justify-center bg-white rounded-full border border-body-light">
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11 11L8.1129 8.1129M8.1129 8.1129C8.8943 7.33151 9.33329 6.2717 9.33329 5.16664C9.33329 4.06158 8.8943 3.00178 8.1129 2.22038C7.33151 1.43898 6.2717 1 5.16664 1C4.06158 1 3.00178 1.43898 2.22038 2.22038C1.43898 3.00178 1 4.06158 1 5.16664C1 6.2717 1.43898 7.33151 2.22038 8.1129C3.00178 8.8943 4.06158 9.33328 5.16664 9.33328C6.2717 9.33328 7.33151 8.8943 8.1129 8.1129Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</button>
 						</div>
-					</div>
+					</nav>
 				</div>
 			</div>
 		</header>
-		<!-- header end -->
-
-		<!-- main start -->
 		<main class="main">
-
-			<!-- main sec start -->
-			<section class="relative bg-no-repeat bg-center bg-cover max-465:bg-[cover]bg-center"
-				style="background-image: url(./images/main-bg.png);">
+			<section class="relative bg-no-repeat bg-center bg-cover py-32" style="background-image: url(./img/islomota.uz-mosque.png)">
 				<div class="container">
-					<div class="text-center py-30">
-						<img class="inline-block" src="images/main-text.png" alt="">
-						<h1
-							class="font-playfair text-h1 text-white py-14 w-3/5 mx-auto xl-down:w-full md-up:text-4xl xs-down:text-xl">
-							Isomota
-							masjidi muhlislari bilan
-							komillik sari intiling!</h1>
-						<a href="#!"
-							class="inline-block rounded border border-solid border-white text-white py-4 px-8 hover:bg-white hover:text-black duration-150 text-sm max-465:py-2">Biz
-							haqimizda</a>
+					<div class="flex flex-col items-center text-center text-white space-y-14 max-w-3xl mx-auto">
+						<p>
+							<img src="img/bismillah.png" width="271" height="57" alt="islomota.uz" />
+						</p>
+						<h1 class="text-h1 font-normal">
+							Isomota masjidi muhlislari bilan komillik sari intiling!
+						</h1>
+						<a href="#" class="rounded border border-white py-4 px-8 text-white hover:bg-white hover:text-body text-sm transition">Biz haqimizda</a>
 					</div>
 				</div>
 			</section>
-			<!-- main sec end -->
 
-			<!-- articles-sec start -->
-			<section class="articles-sec py-14">
-				<div class="container">
-					<div class="title">
-						<p class="text-gray font-normal text-sm">Jamoamiz tomonidan tayyorlangan</p>
-						<h2 class="font-medium  font-playfair text-4xl pt-1">Maqolalar</h2>
+			<section class="container py-14 space-y-9">
+				<h1 class="text-h2 space-y-1">
+					<span class="block text-body-light font-montserrat font-regular text-sm">Jamoamiz tomonidan tayyorlangan</span>Maqolalar
+				</h1>
+
+				<div class="flex gap-6">
+					<div class="w-8/12 bg-white border border-body-light/20 rounded divide-y divide-body-light/10">
+						<div class="flex gap-8 p-8">
+							<img src="img/georgiy-lentasi-manosi.png" width="210" height="140" alt="georgiy lentasi ma'nosi" class="flex-shrink-0">
+
+							<div class="space-y-3">
+								<p class="flex items-center text-xs divide-x divide-x-body-light/20 -mx-3 text-body-light leading-none">
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.5 1V2.5M10.5 1V2.5M1 11.5V4C1 3.60218 1.15804 3.22064 1.43934 2.93934C1.72064 2.65804 2.10218 2.5 2.5 2.5H11.5C11.8978 2.5 12.2794 2.65804 12.5607 2.93934C12.842 3.22064 13 3.60218 13 4V11.5M1 11.5C1 11.8978 1.15804 12.2794 1.43934 12.5607C1.72064 12.842 2.10218 13 2.5 13H11.5C11.8978 13 12.2794 12.842 12.5607 12.5607C12.842 12.2794 13 11.8978 13 11.5M1 11.5V6.5C1 6.10218 1.15804 5.72064 1.43934 5.43934C1.72064 5.15804 2.10218 5 2.5 5H11.5C11.8978 5 12.2794 5.15804 12.5607 5.43934C12.842 5.72064 13 6.10218 13 6.5V11.5M7 7.5H7.00533V7.50533H7V7.5ZM7 9H7.00533V9.00533H7V9ZM7 10.5H7.00533V10.5053H7V10.5ZM5.5 9H5.50533V9.00533H5.5V9ZM5.5 10.5H5.50533V10.5053H5.5V10.5ZM4 9H4.00533V9.00533H4V9ZM4 10.5H4.00533V10.5053H4V10.5ZM8.5 7.5H8.50533V7.50533H8.5V7.5ZM8.5 9H8.50533V9.00533H8.5V9ZM8.5 10.5H8.50533V10.5053H8.5V10.5ZM10 7.5H10.0053V7.50533H10V7.5ZM10 9H10.0053V9.00533H10V9Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+
+										<span>May 14</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.35732 8.21467C1.31131 8.07639 1.31131 7.92694 1.35732 7.78867C2.28199 5.00667 4.90665 3 7.99999 3C11.092 3 13.7153 5.00467 14.642 7.78533C14.6887 7.92333 14.6887 8.07267 14.642 8.21133C13.718 10.9933 11.0933 13 7.99999 13C4.90799 13 2.28399 10.9953 1.35732 8.21467Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+
+										<span>45</span>
+									</span>
+								</p>
+
+								<h3 class="text-h3 line-clamp-1">Georgiy Lentasining ma’nosi nima?</h3>
+
+								<p class="line-clamp-3">O‘zA axborot agentligi ruhshunoslik fanlari nomzodi Mahmud Yo‘ldoshevning Georgiy lentasi haqidagi maqolasini chop etdi. Unda ushbu lentaning ma’nosi ochib berilgan.</p>
+							</div>
+						</div>
+
+						<div class="flex gap-8 p-8">
+							<img src="img/saloamtlik-uchun-uhlash.png" width="210" height="140" alt="salomatlik uchun necha soat uhlash kerak" class="flex-shrink-0">
+
+							<div class="space-y-3">
+								<p class="flex items-center text-xs divide-x divide-x-body-light/20 -mx-3 text-body-light leading-none">
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.5 1V2.5M10.5 1V2.5M1 11.5V4C1 3.60218 1.15804 3.22064 1.43934 2.93934C1.72064 2.65804 2.10218 2.5 2.5 2.5H11.5C11.8978 2.5 12.2794 2.65804 12.5607 2.93934C12.842 3.22064 13 3.60218 13 4V11.5M1 11.5C1 11.8978 1.15804 12.2794 1.43934 12.5607C1.72064 12.842 2.10218 13 2.5 13H11.5C11.8978 13 12.2794 12.842 12.5607 12.5607C12.842 12.2794 13 11.8978 13 11.5M1 11.5V6.5C1 6.10218 1.15804 5.72064 1.43934 5.43934C1.72064 5.15804 2.10218 5 2.5 5H11.5C11.8978 5 12.2794 5.15804 12.5607 5.43934C12.842 5.72064 13 6.10218 13 6.5V11.5M7 7.5H7.00533V7.50533H7V7.5ZM7 9H7.00533V9.00533H7V9ZM7 10.5H7.00533V10.5053H7V10.5ZM5.5 9H5.50533V9.00533H5.5V9ZM5.5 10.5H5.50533V10.5053H5.5V10.5ZM4 9H4.00533V9.00533H4V9ZM4 10.5H4.00533V10.5053H4V10.5ZM8.5 7.5H8.50533V7.50533H8.5V7.5ZM8.5 9H8.50533V9.00533H8.5V9ZM8.5 10.5H8.50533V10.5053H8.5V10.5ZM10 7.5H10.0053V7.50533H10V7.5ZM10 9H10.0053V9.00533H10V9Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+
+										<span>May 8</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.35732 8.21467C1.31131 8.07639 1.31131 7.92694 1.35732 7.78867C2.28199 5.00667 4.90665 3 7.99999 3C11.092 3 13.7153 5.00467 14.642 7.78533C14.6887 7.92333 14.6887 8.07267 14.642 8.21133C13.718 10.9933 11.0933 13 7.99999 13C4.90799 13 2.28399 10.9953 1.35732 8.21467Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+
+										<span>18</span>
+									</span>
+								</p>
+
+								<h3 class="text-h3 line-clamp-1">Salomatlik uchun kuniga necha soat uhlash kerak?</h3>
+
+								<p class="line-clamp-3">Kuniga 12 soat ishlasangiz ham, sizdagi samaradorlik oshib ketmaydi. Qo‘shimcha ishga pul to‘langani bilan bu hayotingizdan nafratlanish va sog‘lig‘ingizga putur etkazish xavfini oshiradi. Lifehacker ish va hayot muvoz...</p>
+							</div>
+						</div>
+
+						<div class="flex gap-8 p-8">
+							<img src="img/bitcoin-nima.png" width="210" height="140" alt="bitcoin nima" class="flex-shrink-0">
+
+							<div class="space-y-3">
+								<p class="flex items-center text-xs divide-x divide-x-body-light/20 -mx-3 text-body-light leading-none">
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.5 1V2.5M10.5 1V2.5M1 11.5V4C1 3.60218 1.15804 3.22064 1.43934 2.93934C1.72064 2.65804 2.10218 2.5 2.5 2.5H11.5C11.8978 2.5 12.2794 2.65804 12.5607 2.93934C12.842 3.22064 13 3.60218 13 4V11.5M1 11.5C1 11.8978 1.15804 12.2794 1.43934 12.5607C1.72064 12.842 2.10218 13 2.5 13H11.5C11.8978 13 12.2794 12.842 12.5607 12.5607C12.842 12.2794 13 11.8978 13 11.5M1 11.5V6.5C1 6.10218 1.15804 5.72064 1.43934 5.43934C1.72064 5.15804 2.10218 5 2.5 5H11.5C11.8978 5 12.2794 5.15804 12.5607 5.43934C12.842 5.72064 13 6.10218 13 6.5V11.5M7 7.5H7.00533V7.50533H7V7.5ZM7 9H7.00533V9.00533H7V9ZM7 10.5H7.00533V10.5053H7V10.5ZM5.5 9H5.50533V9.00533H5.5V9ZM5.5 10.5H5.50533V10.5053H5.5V10.5ZM4 9H4.00533V9.00533H4V9ZM4 10.5H4.00533V10.5053H4V10.5ZM8.5 7.5H8.50533V7.50533H8.5V7.5ZM8.5 9H8.50533V9.00533H8.5V9ZM8.5 10.5H8.50533V10.5053H8.5V10.5ZM10 7.5H10.0053V7.50533H10V7.5ZM10 9H10.0053V9.00533H10V9Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+
+										<span>May 4</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.35732 8.21467C1.31131 8.07639 1.31131 7.92694 1.35732 7.78867C2.28199 5.00667 4.90665 3 7.99999 3C11.092 3 13.7153 5.00467 14.642 7.78533C14.6887 7.92333 14.6887 8.07267 14.642 8.21133C13.718 10.9933 11.0933 13 7.99999 13C4.90799 13 2.28399 10.9953 1.35732 8.21467Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+
+										<span>125</span>
+									</span>
+								</p>
+
+								<h3 class="text-h3 line-clamp-1">Bitcoin nima?</h3>
+
+								<p class="line-clamp-3">Bir qishloq atrofida juda ko‘p maymunlar yashar ekan. Kunlarning birida qishloqqa bir savdogar kelib, bu maymunlarni sotib olishini aytibdi va har bir maymun uchun 100 dollar berishni taklif qilibdi....</p>
+							</div>
+						</div>
+
+						<a href="#" class="inline-flex items-center space-x-1.5 px-6 py-4 rounded ml-8 translate-y-1/2 ring-1 ring-inset ring-body-light/20 bg-white">
+							<span>Barchasini ko'rish</span>
+							<svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.5 1L5.5 6L0.5 11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
 					</div>
 
-					<div class="flex flex-wrap justify-between relative mt-9 md-up:space-y-16">
-						<div class="articles-box w-847  xl-down:w-2/3 border rounded border-gray/10 relative bg-white">
-							<div
-								class="p-8 pr-5 flex border-b border-gray/10 space-x-8 sm-down:flex-col sm-down:space-x-0 sm-down:space-y-6 xs-down:py-8 xs-down:px-4">
-								<div class="max-w-210 w-full border-l border-r border-gray/10 xs-down:w-full xs-down:max-w">
-									<img class="h-36 object-cover xs-down:w-full" src="./images/articles-img1.png" alt="" width="210px"
-										height="144px">
-								</div>
-								<div class="articles-sec__box-info w-full space-y-3">
-									<div class="flex items-center divide-x divide-gray/20 text-xs font-normal text-gray -mx-3">
-										<div class="flex items-center space-x-1 px-3">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-												stroke="currentColor" class="w-4 h-4">
-												<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round"
-													d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+					<div class="w-4/12 bg-white border border-body-light/20 rounded relative">
+						<p class="absolute top-0 left-8 -translate-y-1/2 uppercase font-semibold tracking-widest before:content-[''] before:absolute before:w-full before:h-px before:bg-white before:z-10 before:top-1/2 before:-mt-px before:left-0"><span class="relative z-20">So'nggi yangiliklar</span></p>
+
+						<div class="divide-y divide-body-light/10">
+							<div class="flex gap-6 p-8">
+								<img src="img/ular-eshonmi.png" width="102" height="140" alt="ular eshonmi" class="flex-shrink-0 object-cover">
+
+								<div class="space-y-3">
+									<p class="text-xs text-body-light leading-none">
+										<span class="flex items-center space-x-1.5">
+											<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M3.5 1V2.5M10.5 1V2.5M1 11.5V4C1 3.60218 1.15804 3.22064 1.43934 2.93934C1.72064 2.65804 2.10218 2.5 2.5 2.5H11.5C11.8978 2.5 12.2794 2.65804 12.5607 2.93934C12.842 3.22064 13 3.60218 13 4V11.5M1 11.5C1 11.8978 1.15804 12.2794 1.43934 12.5607C1.72064 12.842 2.10218 13 2.5 13H11.5C11.8978 13 12.2794 12.842 12.5607 12.5607C12.842 12.2794 13 11.8978 13 11.5M1 11.5V6.5C1 6.10218 1.15804 5.72064 1.43934 5.43934C1.72064 5.15804 2.10218 5 2.5 5H11.5C11.8978 5 12.2794 5.15804 12.5607 5.43934C12.842 5.72064 13 6.10218 13 6.5V11.5M7 7.5H7.00533V7.50533H7V7.5ZM7 9H7.00533V9.00533H7V9ZM7 10.5H7.00533V10.5053H7V10.5ZM5.5 9H5.50533V9.00533H5.5V9ZM5.5 10.5H5.50533V10.5053H5.5V10.5ZM4 9H4.00533V9.00533H4V9ZM4 10.5H4.00533V10.5053H4V10.5ZM8.5 7.5H8.50533V7.50533H8.5V7.5ZM8.5 9H8.50533V9.00533H8.5V9ZM8.5 10.5H8.50533V10.5053H8.5V10.5ZM10 7.5H10.0053V7.50533H10V7.5ZM10 9H10.0053V9.00533H10V9Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
 											</svg>
-											<span>May
-												14</span>
-										</div>
-										<div class="flex items-center space-x-1 px-3">
-											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M1.35732 8.21467C1.31131 8.07639 1.31131 7.92694 1.35732 7.78867C2.28199 5.00667 4.90665 3 7.99999 3C11.092 3 13.7153 5.00467 14.642 7.78533C14.6887 7.92333 14.6887 8.07267 14.642 8.21133C13.718 10.9933 11.0933 13 7.99999 13C4.90799 13 2.28399 10.9953 1.35732 8.21467Z"
-													stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-												<path
-													d="M10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z"
-													stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-											</svg>
-											<span>45</span>
-										</div>
-									</div>
-									<h3 class="font-playfair font-medium text-2xl text-black line-clamp-1">Georgiy
-										Lentasining ma’nosi
-										nima?
-									</h3>
-									<p class="text-black text-sm font-normal line-clamp-3">O‘zA axborot agentligi
-										ruhshunoslik fanlari
-										nomzodi
-										Mahmud Yo‘ldoshevning Georgiy lentasi haqidagi maqolasini chop etdi.
-										Unda ushbu lentaning ma’nosi ochib berilgan. O‘zA axborot agentligi ruhshunoslik
-										fanlari nomzodi
-										Mahmud Yo‘ldoshevning Georgiy lentasi haqidagi maqolasini chop etdi.
-										Unda ushbu lentaning ma’nosi ochib berilgan.
+
+											<span>May 12</span>
+										</span>
 									</p>
+
+									<p class="line-clamp-5">Ular eshonmi? Alloh Taolo o’zi hohlagan kunini, hohlagan narsasini, hohlagan kishisini ulug’ qiladi va aqqli bandalar Alloh ulug’ qilgan isonlarni shu yerda yo'qladik.</p>
 								</div>
 							</div>
-							<div
-								class="p-8 pr-5 flex border-b border-gray/10 space-x-8 sm-down:flex-col sm-down:space-x-0 sm-down:space-y-6 xs-down:py-8 xs-down:px-4">
-								<div class="max-w-210 w-full border-l border-r border-gray/10 xs-down:w-full xs-down:max-w">
-									<img class="h-36 object-cover xs-down:w-full" src="./images/articles-img2.png" alt="" width="210px"
-										height="144px">
-								</div>
-								<div class="articles-sec__box-info w-full space-y-3">
-									<div class="flex items-center divide-x divide-gray/20 text-xs font-normal text-gray -mx-3">
-										<div class="flex items-center space-x-1 px-3">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-												stroke="currentColor" class="w-4 h-4">
-												<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round"
-													d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+
+							<div class="flex gap-6 p-8">
+								<img src="img/yangi-hayot-jomesi.png" width="102" height="140" alt="yangi hayot jome'si" class="flex-shrink-0 object-cover">
+
+								<div class="space-y-3">
+									<p class="text-xs text-body-light leading-none">
+										<span class="flex items-center space-x-1.5">
+											<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M3.5 1V2.5M10.5 1V2.5M1 11.5V4C1 3.60218 1.15804 3.22064 1.43934 2.93934C1.72064 2.65804 2.10218 2.5 2.5 2.5H11.5C11.8978 2.5 12.2794 2.65804 12.5607 2.93934C12.842 3.22064 13 3.60218 13 4V11.5M1 11.5C1 11.8978 1.15804 12.2794 1.43934 12.5607C1.72064 12.842 2.10218 13 2.5 13H11.5C11.8978 13 12.2794 12.842 12.5607 12.5607C12.842 12.2794 13 11.8978 13 11.5M1 11.5V6.5C1 6.10218 1.15804 5.72064 1.43934 5.43934C1.72064 5.15804 2.10218 5 2.5 5H11.5C11.8978 5 12.2794 5.15804 12.5607 5.43934C12.842 5.72064 13 6.10218 13 6.5V11.5M7 7.5H7.00533V7.50533H7V7.5ZM7 9H7.00533V9.00533H7V9ZM7 10.5H7.00533V10.5053H7V10.5ZM5.5 9H5.50533V9.00533H5.5V9ZM5.5 10.5H5.50533V10.5053H5.5V10.5ZM4 9H4.00533V9.00533H4V9ZM4 10.5H4.00533V10.5053H4V10.5ZM8.5 7.5H8.50533V7.50533H8.5V7.5ZM8.5 9H8.50533V9.00533H8.5V9ZM8.5 10.5H8.50533V10.5053H8.5V10.5ZM10 7.5H10.0053V7.50533H10V7.5ZM10 9H10.0053V9.00533H10V9Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
 											</svg>
-											<span>May
-												12</span>
-										</div>
-										<div class="flex items-center space-x-1 px-3">
-											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M1.35732 8.21467C1.31131 8.07639 1.31131 7.92694 1.35732 7.78867C2.28199 5.00667 4.90665 3 7.99999 3C11.092 3 13.7153 5.00467 14.642 7.78533C14.6887 7.92333 14.6887 8.07267 14.642 8.21133C13.718 10.9933 11.0933 13 7.99999 13C4.90799 13 2.28399 10.9953 1.35732 8.21467Z"
-													stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-												<path
-													d="M10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z"
-													stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-											</svg>
-											<span>89</span>
-										</div>
-									</div>
-									<h3 class="font-playfair font-medium text-2xl text-black line-clamp-1">Salomatlik
-										uchun kuniga necha
-										soat uhlash kerak?
-									</h3>
-									<p class="text-black text-sm font-normal line-clamp-3">Kuniga 12 soat ishlasangiz
-										ham, sizdagi
-										samaradorlik oshib ketmaydi. Qo‘shimcha ishga pul to‘langani bilan bu
-										hayotingizdan nafratlanish va sog‘lig‘ingizga putur etkazish xavfini oshiradi.
-										Lifehacker ish va
-										hayot muvoz...
+
+											<span>May 7</span>
+										</span>
 									</p>
+
+									<p class="line-clamp-5">7-may kuni “Yangi Hayot” Jome’siga ilk g’isht qo’yildi. Tadbirda Sirdaryo viloyati bosh imom hatibi qatnashdilar va tadbirdan juda minnatdor.</p>
 								</div>
 							</div>
-							<div
-								class="p-8 pr-5 flex space-x-8 sm-down:flex-col sm-down:space-x-0 sm-down:space-y-6 xs-down:py-8 xs-down:px-4 mb-8">
-								<div class="max-w-210 w-full border-l border-r border-gray/10 xs-down:w-full xs-down:max-w">
-									<img class="h-36 object-cover xs-down:w-full" src="./images/articles-img3.png" alt="" width="210px"
-										height="144px">
-								</div>
-								<div class="articles-sec__box-info w-full space-y-3">
-									<div class="flex items-center divide-x divide-gray/20 text-xs font-normal text-gray -mx-3">
-										<div class="flex items-center space-x-1 px-3">
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-												stroke="currentColor" class="w-4 h-4">
-												<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round"
-													d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+
+							<div class="flex gap-6 p-8">
+								<img src="img/hakim-at-termiziy.png" width="102" height="140" alt="hakim at termiziy" class="flex-shrink-0 object-cover">
+
+								<div class="space-y-3">
+									<p class="text-xs text-body-light leading-none">
+										<span class="flex items-center space-x-1.5">
+											<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M3.5 1V2.5M10.5 1V2.5M1 11.5V4C1 3.60218 1.15804 3.22064 1.43934 2.93934C1.72064 2.65804 2.10218 2.5 2.5 2.5H11.5C11.8978 2.5 12.2794 2.65804 12.5607 2.93934C12.842 3.22064 13 3.60218 13 4V11.5M1 11.5C1 11.8978 1.15804 12.2794 1.43934 12.5607C1.72064 12.842 2.10218 13 2.5 13H11.5C11.8978 13 12.2794 12.842 12.5607 12.5607C12.842 12.2794 13 11.8978 13 11.5M1 11.5V6.5C1 6.10218 1.15804 5.72064 1.43934 5.43934C1.72064 5.15804 2.10218 5 2.5 5H11.5C11.8978 5 12.2794 5.15804 12.5607 5.43934C12.842 5.72064 13 6.10218 13 6.5V11.5M7 7.5H7.00533V7.50533H7V7.5ZM7 9H7.00533V9.00533H7V9ZM7 10.5H7.00533V10.5053H7V10.5ZM5.5 9H5.50533V9.00533H5.5V9ZM5.5 10.5H5.50533V10.5053H5.5V10.5ZM4 9H4.00533V9.00533H4V9ZM4 10.5H4.00533V10.5053H4V10.5ZM8.5 7.5H8.50533V7.50533H8.5V7.5ZM8.5 9H8.50533V9.00533H8.5V9ZM8.5 10.5H8.50533V10.5053H8.5V10.5ZM10 7.5H10.0053V7.50533H10V7.5ZM10 9H10.0053V9.00533H10V9Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
 											</svg>
-											<span>Aprel
-												23</span>
-										</div>
-										<div class="flex items-center space-x-1 px-3">
-											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M1.35732 8.21467C1.31131 8.07639 1.31131 7.92694 1.35732 7.78867C2.28199 5.00667 4.90665 3 7.99999 3C11.092 3 13.7153 5.00467 14.642 7.78533C14.6887 7.92333 14.6887 8.07267 14.642 8.21133C13.718 10.9933 11.0933 13 7.99999 13C4.90799 13 2.28399 10.9953 1.35732 8.21467Z"
-													stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-												<path
-													d="M10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z"
-													stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-											</svg>
-											<span>128</span>
-										</div>
-									</div>
-									<h3 class="font-playfair font-medium text-2xl text-black line-clamp-1">Bitcoin nima?
-										Yohud Maymun
-										tijorati...
-									</h3>
-									<p class="text-black text-sm font-normal line-clamp-3">Bir qishloq atrofida juda
-										ko‘p maymunlar yashar
-										ekan. Kunlarning birida qishloqqa bir savdogar kelib, bu maymunlarni
-										sotib olishini aytibdi va har bir maymun uchun 100 dollar berishni taklif
-										qilibdi....
+
+											<span>April 3</span>
+										</span>
 									</p>
+
+									<p class="line-clamp-5">Hakim at Termiziy mashoyiqlarning kiborlaridan, olam shayhi, himmat va sahovat sohibi, ilmi Rabboniy edil. Uning to’liq ismi Abu Abdulloh ibn Ali So'guniy.</p>
 								</div>
 							</div>
-							<div class="absolute -bottom-3 left-8 articles-sec-btn xs-down:left-4">
-								<a class="bg-white border text-sm text-black border-gray/10 py-4 px-6 group" href="#!">
-									Barchasini ko’rish
-									<svg class="inline transition-all ml-1 group-hover:translate-x-1" width="6" height="12"
-										viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M0.5 1L5.5 6L0.5 11" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
+						</div>
+
+						<a href="#" class="inline-flex items-center space-x-1.5 px-6 py-4 rounded ml-8 translate-y-1/2 ring-1 ring-inset ring-body-light/20 bg-white">
+							<span>Barchasini ko'rish</span>
+							<svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.5 1L5.5 6L0.5 11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="py-14 bg-link/5 border-body-light/10 border-y">
+				<div class="container space-y-9">
+					<div class="flex items-center justify-between">
+						<h1 class="text-h2">Dunyo yangiliklari</h1>
+
+						<a href="#" class="text-link underline hover:no-underline">Barchasini ko'rish</a>
+					</div>
+
+					<div class="flex gap-6">
+						<div class="w-6/12 p-8 flex space-x-8 bg-white border border-body-light/20 rounded">
+							<img src="img/ohirat-boqiydir.png" width="270" height="324" alt="ohirat boqiydir" class="w-4/12 object-cover">
+
+							<div class="space-y-3">
+								<p class="flex items-center text-xs divide-x divide-x-body-light/20 -mx-3 text-body-light">
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+
+
+										<span>Matbuot hizmati</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.5 1V2.5M10.5 1V2.5M1 11.5V4C1 3.60218 1.15804 3.22064 1.43934 2.93934C1.72064 2.65804 2.10218 2.5 2.5 2.5H11.5C11.8978 2.5 12.2794 2.65804 12.5607 2.93934C12.842 3.22064 13 3.60218 13 4V11.5M1 11.5C1 11.8978 1.15804 12.2794 1.43934 12.5607C1.72064 12.842 2.10218 13 2.5 13H11.5C11.8978 13 12.2794 12.842 12.5607 12.5607C12.842 12.2794 13 11.8978 13 11.5M1 11.5V6.5C1 6.10218 1.15804 5.72064 1.43934 5.43934C1.72064 5.15804 2.10218 5 2.5 5H11.5C11.8978 5 12.2794 5.15804 12.5607 5.43934C12.842 5.72064 13 6.10218 13 6.5V11.5M7 7.5H7.00533V7.50533H7V7.5ZM7 9H7.00533V9.00533H7V9ZM7 10.5H7.00533V10.5053H7V10.5ZM5.5 9H5.50533V9.00533H5.5V9ZM5.5 10.5H5.50533V10.5053H5.5V10.5ZM4 9H4.00533V9.00533H4V9ZM4 10.5H4.00533V10.5053H4V10.5ZM8.5 7.5H8.50533V7.50533H8.5V7.5ZM8.5 9H8.50533V9.00533H8.5V9ZM8.5 10.5H8.50533V10.5053H8.5V10.5ZM10 7.5H10.0053V7.50533H10V7.5ZM10 9H10.0053V9.00533H10V9Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+
+										<span>May 14</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.35732 8.21467C1.31131 8.07639 1.31131 7.92694 1.35732 7.78867C2.28199 5.00667 4.90665 3 7.99999 3C11.092 3 13.7153 5.00467 14.642 7.78533C14.6887 7.92333 14.6887 8.07267 14.642 8.21133C13.718 10.9933 11.0933 13 7.99999 13C4.90799 13 2.28399 10.9953 1.35732 8.21467Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+
+										<span>45</span>
+									</span>
+								</p>
+
+								<h3 class="text-h4">Ohirat boqiydir</h3>
+								<p>«Ey Odam farzandi! Menga xizmat qil, chunki Menga xizmat qilgan kishini yaxshi ko‘raman va bandalarimni ham unga xizmat qildiraman. Albatta sen umringning o‘tgan qismini Menga qancha osiylik qilganingni bilmaysan va qolgan qismida ham qancha osiylik qilishingni bilmaysan.</p>
+
+								<a href="#" class="inline-flex items-center space-x-1.5 px-6 py-4 !mt-6 rounded ring-1 ring-inset ring-body-light/20 bg-white">
+									<span>Davomini o'qish</span>
+									<svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.5 1L5.5 6L0.5 11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
 									</svg>
 								</a>
 							</div>
 						</div>
-						<div
-							class="articles-box w-[calc(100%-24px-847px)] xl-down:w-2/3 border rounded border-gray/10 relative bg-white">
-							<div class="absolute -translate-y-1/2 left-8 bg-white py-2 px-3 xs-down:left-4">
-								<span class="text-sm font-semibold">SO’NGGI YANGILIKLAR</span>
-							</div>
-							<div
-								class="p-8 pr-5 border-b border-gray/10 flex space-x-6 max-sm:flex-col xs-down:py-8 xs-down:px-4 sm-down:flex-col sm-down:space-x-0 sm-down:space-y-6">
-								<div class="max-w-102 w-full md-up:max-w-210">
-									<img class="w-full h-36 object-cover xs-down:w-full" src="./images/articles-img4.png"
-										alt="articles-img4" width="102px" height="144px">
-								</div>
-								<div class="articles-sec__box-info space-y-3 w-full">
-									<div class="flex items-center">
-										<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M3.5 1V2.5M10.5 1V2.5M1 11.5V4C1 3.60218 1.15804 3.22064 1.43934 2.93934C1.72064 2.65804 2.10218 2.5 2.5 2.5H11.5C11.8978 2.5 12.2794 2.65804 12.5607 2.93934C12.842 3.22064 13 3.60218 13 4V11.5M1 11.5C1 11.8978 1.15804 12.2794 1.43934 12.5607C1.72064 12.842 2.10218 13 2.5 13H11.5C11.8978 13 12.2794 12.842 12.5607 12.5607C12.842 12.2794 13 11.8978 13 11.5M1 11.5V6.5C1 6.10218 1.15804 5.72064 1.43934 5.43934C1.72064 5.15804 2.10218 5 2.5 5H11.5C11.8978 5 12.2794 5.15804 12.5607 5.43934C12.842 5.72064 13 6.10218 13 6.5V11.5M7 7.5H7.00533V7.50533H7V7.5ZM7 9H7.00533V9.00533H7V9ZM7 10.5H7.00533V10.5053H7V10.5ZM5.5 9H5.50533V9.00533H5.5V9ZM5.5 10.5H5.50533V10.5053H5.5V10.5ZM4 9H4.00533V9.00533H4V9ZM4 10.5H4.00533V10.5053H4V10.5ZM8.5 7.5H8.50533V7.50533H8.5V7.5ZM8.5 9H8.50533V9.00533H8.5V9ZM8.5 10.5H8.50533V10.5053H8.5V10.5ZM10 7.5H10.0053V7.50533H10V7.5ZM10 9H10.0053V9.00533H10V9Z"
-												stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-										</svg>
-										<span class="pr-7 pl-2 text-gray text-xs font-normal relative">May
-											12</span>
-									</div>
-									<p class="text-black text-sm font-normal line-clamp-5">Ular eshonmi? Alloh Taolo
-										o’zi hohlagan
-										kunini, hohlagan
-										narsasini, hohlagan kishisini ulug’ qiladi va aqqli bandalar
-										Alloh ulug’...</p>
-								</div>
-							</div>
-							<div
-								class="p-8 pr-5 border-b border-gray/10 flex space-x-6 max-sm:flex-col xs-down:py-8 xs-down:px-4 sm-down:flex-col sm-down:space-x-0 sm-down:space-y-6">
-								<div class="max-w-102 w-full md-up:max-w-210">
-									<img class="w-full h-36 object-cover xs-down:w-full" src="./images/articles-img5.png"
-										alt="articles-img4" width="102px" height="144px">
-								</div>
-								<div class="articles-sec__box-info space-y-3 w-full">
-									<div class="flex items-center">
-										<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M3.5 1V2.5M10.5 1V2.5M1 11.5V4C1 3.60218 1.15804 3.22064 1.43934 2.93934C1.72064 2.65804 2.10218 2.5 2.5 2.5H11.5C11.8978 2.5 12.2794 2.65804 12.5607 2.93934C12.842 3.22064 13 3.60218 13 4V11.5M1 11.5C1 11.8978 1.15804 12.2794 1.43934 12.5607C1.72064 12.842 2.10218 13 2.5 13H11.5C11.8978 13 12.2794 12.842 12.5607 12.5607C12.842 12.2794 13 11.8978 13 11.5M1 11.5V6.5C1 6.10218 1.15804 5.72064 1.43934 5.43934C1.72064 5.15804 2.10218 5 2.5 5H11.5C11.8978 5 12.2794 5.15804 12.5607 5.43934C12.842 5.72064 13 6.10218 13 6.5V11.5M7 7.5H7.00533V7.50533H7V7.5ZM7 9H7.00533V9.00533H7V9ZM7 10.5H7.00533V10.5053H7V10.5ZM5.5 9H5.50533V9.00533H5.5V9ZM5.5 10.5H5.50533V10.5053H5.5V10.5ZM4 9H4.00533V9.00533H4V9ZM4 10.5H4.00533V10.5053H4V10.5ZM8.5 7.5H8.50533V7.50533H8.5V7.5ZM8.5 9H8.50533V9.00533H8.5V9ZM8.5 10.5H8.50533V10.5053H8.5V10.5ZM10 7.5H10.0053V7.50533H10V7.5ZM10 9H10.0053V9.00533H10V9Z"
-												stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-										</svg>
-										<span class="pr-7 pl-2 text-gray text-xs font-normal relative">May
-											14</span>
-									</div>
-									<p class="text-black text-sm font-normal line-clamp-5">3-may kuni “Yangi Hayot”
-										Jome’siga ilk g’isht
-										qo’yildi.
-										Tadbirda Sirdaryo viloyati bosh imom hatibi qatnashdilar va tadbirdan juda
-										minnatdor...</p>
-								</div>
-							</div>
-							<div
-								class="p-8 pr-5 flex space-x-6 max-sm:flex-col xs-down:py-8 xs-down:px-4 sm-down:flex-col sm-down:space-x-0 sm-down:space-y-6 mb-8">
-								<div class="max-w-102 w-full md-up:max-w-210">
-									<img class="w-full h-36 object-cover xs-down:w-full" src="./images/articles-img6.png"
-										alt="articles-img4" width="102px" height="144px">
-								</div>
-								<div class="articles-sec__box-info space-y-3 w-full">
-									<div class="flex items-center">
-										<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M3.5 1V2.5M10.5 1V2.5M1 11.5V4C1 3.60218 1.15804 3.22064 1.43934 2.93934C1.72064 2.65804 2.10218 2.5 2.5 2.5H11.5C11.8978 2.5 12.2794 2.65804 12.5607 2.93934C12.842 3.22064 13 3.60218 13 4V11.5M1 11.5C1 11.8978 1.15804 12.2794 1.43934 12.5607C1.72064 12.842 2.10218 13 2.5 13H11.5C11.8978 13 12.2794 12.842 12.5607 12.5607C12.842 12.2794 13 11.8978 13 11.5M1 11.5V6.5C1 6.10218 1.15804 5.72064 1.43934 5.43934C1.72064 5.15804 2.10218 5 2.5 5H11.5C11.8978 5 12.2794 5.15804 12.5607 5.43934C12.842 5.72064 13 6.10218 13 6.5V11.5M7 7.5H7.00533V7.50533H7V7.5ZM7 9H7.00533V9.00533H7V9ZM7 10.5H7.00533V10.5053H7V10.5ZM5.5 9H5.50533V9.00533H5.5V9ZM5.5 10.5H5.50533V10.5053H5.5V10.5ZM4 9H4.00533V9.00533H4V9ZM4 10.5H4.00533V10.5053H4V10.5ZM8.5 7.5H8.50533V7.50533H8.5V7.5ZM8.5 9H8.50533V9.00533H8.5V9ZM8.5 10.5H8.50533V10.5053H8.5V10.5ZM10 7.5H10.0053V7.50533H10V7.5ZM10 9H10.0053V9.00533H10V9Z"
-												stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-										</svg>
-										<span class="pr-7 pl-2 text-gray text-xs font-normal relative">May
-											11</span>
-									</div>
-									<p class="text-black text-sm font-normal line-clamp-5">Hakim at Termiziy
-										mashoyiqlarning kiborlaridan,
-										olam shayhi, himmat va sahovat sohibi, ilmi Rabboniy edil. Uning to’liq
-										ismi Abu Abdulloh ibn Ali...</p>
-								</div>
-							</div>
 
-							<div class="absolute -bottom-3 left-8 articles-sec-btn xs-down:left-4">
-								<a class="bg-white border text-sm text-black border-gray/10 py-4 px-6 group" href="#!">
-									Barchasini ko’rish
-									<svg class="inline transition-all ml-1 group-hover:translate-x-1" width="6" height="12"
-										viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M0.5 1L5.5 6L0.5 11" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
+						<div class="w-6/12 p-8 flex space-x-8 bg-white border border-body-light/20 rounded">
+							<img src="img/o'zbekiston-delegaciya-al-azhar.png" width="270" height="324" alt="ohirat boqiydir" class="w-4/12 object-cover">
+
+							<div class="space-y-3">
+								<p class="flex items-center text-xs divide-x divide-x-body-light/20 -mx-3 text-body-light">
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+
+
+										<span>Matbuot hizmati</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.5 1V2.5M10.5 1V2.5M1 11.5V4C1 3.60218 1.15804 3.22064 1.43934 2.93934C1.72064 2.65804 2.10218 2.5 2.5 2.5H11.5C11.8978 2.5 12.2794 2.65804 12.5607 2.93934C12.842 3.22064 13 3.60218 13 4V11.5M1 11.5C1 11.8978 1.15804 12.2794 1.43934 12.5607C1.72064 12.842 2.10218 13 2.5 13H11.5C11.8978 13 12.2794 12.842 12.5607 12.5607C12.842 12.2794 13 11.8978 13 11.5M1 11.5V6.5C1 6.10218 1.15804 5.72064 1.43934 5.43934C1.72064 5.15804 2.10218 5 2.5 5H11.5C11.8978 5 12.2794 5.15804 12.5607 5.43934C12.842 5.72064 13 6.10218 13 6.5V11.5M7 7.5H7.00533V7.50533H7V7.5ZM7 9H7.00533V9.00533H7V9ZM7 10.5H7.00533V10.5053H7V10.5ZM5.5 9H5.50533V9.00533H5.5V9ZM5.5 10.5H5.50533V10.5053H5.5V10.5ZM4 9H4.00533V9.00533H4V9ZM4 10.5H4.00533V10.5053H4V10.5ZM8.5 7.5H8.50533V7.50533H8.5V7.5ZM8.5 9H8.50533V9.00533H8.5V9ZM8.5 10.5H8.50533V10.5053H8.5V10.5ZM10 7.5H10.0053V7.50533H10V7.5ZM10 9H10.0053V9.00533H10V9Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+
+										<span>May 7</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.35732 8.21467C1.31131 8.07639 1.31131 7.92694 1.35732 7.78867C2.28199 5.00667 4.90665 3 7.99999 3C11.092 3 13.7153 5.00467 14.642 7.78533C14.6887 7.92333 14.6887 8.07267 14.642 8.21133C13.718 10.9933 11.0933 13 7.99999 13C4.90799 13 2.28399 10.9953 1.35732 8.21467Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+
+										<span>133</span>
+									</span>
+								</p>
+
+								<h3 class="text-h4">O’zbekiston delegaciyasi Al Azharga tashrif buyurdi</h3>
+
+								<p>O‘zbekiston delegatsiyasi Al-Azharning “Ekstremizmga qarshi kurashish observatoriyasi va elektron fatvolar bo‘yicha xalqaro markaz” faoliyati bilan yaqindan tanishdi.</p>
+
+								<a href="#" class="inline-flex items-center space-x-1.5 px-6 py-4 !mt-6 rounded ring-1 ring-inset ring-body-light/20 bg-white">
+									<span>Davomini o'qish</span>
+									<svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.5 1L5.5 6L0.5 11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
 									</svg>
 								</a>
 							</div>
 						</div>
 					</div>
+
+					<ul class="flex items-center justify-center space-x-2">
+						<li><button class="w-4 h-4 block rounded-full bg-body-light/20 overflow-hidden indent-10">1</button></li>
+						<li><button class="w-2 h-2 block rounded-full bg-body-light/20 overflow-hidden indent-10">1</button></li>
+						<li><button class="w-2 h-2 block rounded-full bg-body-light/20 overflow-hidden indent-10">1</button></li>
+						<li><button class="w-2 h-2 block rounded-full bg-body-light/20 overflow-hidden indent-10">1</button></li>
+						<li><button class="w-2 h-2 block rounded-full bg-body-light/20 overflow-hidden indent-10">1</button></li>
+					</ul>
 				</div>
 			</section>
-			<!-- articles-sec end -->
 
-			<!-- world-news start -->
-			<section class="world-news bg-world-news-bg py-14 mt-14">
-				<div class="container">
-					<div class="flex items-center justify-between sm-down:flex-col sm-down:items-start sm-down:space-y-2">
-						<h2 class="font-medium  font-playfair text-4xl pt-1 sm-down:text-2xl">Dunyo yangiliklari</h2>
-						<a href="#!" class="font-normal text-sm text-link underline hover:no-underline">Barchasini
-							ko’rish</a>
+			<section class="py-14">
+				<div class="container space-y-9">
+					<div class="flex items-center justify-between">
+						<h1 class="text-h2">O'zbekiston yangiliklari</h1>
+
+						<a href="#" class="text-link underline hover:no-underline">Barchasini ko'rish</a>
 					</div>
 
-					<div class="swiper mySwiper mt-9">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide rounded border border-gray/10 pr-5 p-5 bg-white">
-								<div class="flex items-start space-x-8 relative sm-up:flex-col sm-up:space-x-0 sm-up:space-y-8">
-									<div class="max-w-270 w-full">
-										<img src="images/world-news-img1.png" alt="" width="270px" height="324px">
-									</div>
-									<div class="w-full h-full space-y-3">
-										<div class="flex items-center divide-x divide-gray/20 -mx-3">
-											<div class="flex items-center space-x-2 px-3">
-												<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path
-														d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z"
-														stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round"
-														stroke-linejoin="round" />
-												</svg>
-												<span class="text-gray text-xs font-normal">Matbuot hizmati</span>
-											</div>
-											<div class="flex items-center space-x-2 px-3">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-													stroke="currentColor" class="w-4 h-4">
-													<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round"
-														d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
-												</svg>
-												<span class="text-gray text-xs font-normal">May 14</span>
-											</div>
-											<div class="flex items-center space-x-2 pl-3">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-													stroke="currentColor" class="w-4 h-4">
-													<path stroke-linecap="round" stroke="#666666" stroke-linejoin="round"
-														d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-													<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-												</svg>
-												<span class="text-gray text-xs font-normal">45</span>
-											</div>
-										</div>
-										<h3 class="text-black font-playfair text-xl font-medium">Ohirat boqiydir</h3>
-										<p class="text-sm font-normal text-black leading-6 line-clamp-6">«Ey Odam
-											farzandi! Menga xizmat
-											qil,
-											chunki
-											Menga xizmat qilgan kishini yaxshi ko‘raman va
-											bandalarimni ham unga xizmat
-											qildiraman. Albatta sen umringning o‘tgan qismini Menga qancha osiylik
-											qilganingni bilmaysan va
-											qolgan qismida ham
-											qancha osiylik qilishingni bilmaysan...</p>
-										<a class="absolute bottom-0 group rounded transition-all border border-gray/20 hover:bg-white py-4 px-6 flex w-fit items-center text-black sm-up:relative"
-											href="#!">
-											Davomini o’qish
-											<svg class="inline transition-all ml-3 group-hover:translate-x-1" width="6" height="12"
-												viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M0.5 1L5.5 6L0.5 11" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-											</svg>
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide rounded border border-gray/10 pr-5 p-5 bg-white">
-								<div class="flex items-start space-x-8 relative sm-up:flex-col sm-up:space-x-0 sm-up:space-y-8">
-									<div class="max-w-270 w-full">
-										<img src="images/world-news-img2.png" alt="world-news-img2" width="270px" height="324px">
-									</div>
-									<div class="w-full h-full space-y-3">
-										<div class="flex items-center divide-x divide-gray/20 -mx-3">
-											<div class="flex items-center space-x-2 px-3">
-												<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path
-														d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z"
-														stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round"
-														stroke-linejoin="round" />
-												</svg>
-												<span class="text-gray text-xs font-normal">Matbuot hizmati</span>
-											</div>
-											<div class="flex items-center space-x-2 px-3">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-													stroke="currentColor" class="w-4 h-4">
-													<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round"
-														d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
-												</svg>
-												<span class="text-gray text-xs font-normal">May 14</span>
-											</div>
-											<div class="flex items-center space-x-2 pl-3">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-													class="w-4 h-4">
-													<path stroke-linecap="round" stroke="#666666" stroke-linejoin="round"
-														d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-													<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-												</svg>
-												<span class="text-gray text-xs font-normal">45</span>
-											</div>
-										</div>
-										<h3 class="text-black font-playfair text-xl font-medium">O’zbekiston
-											delegaciyasi Al Azharga tashrif
-											buyurdi</h3>
-										<p class="text-sm font-normal text-black leading-6 line-clamp-6">O‘zbekiston
-											delegatsiyasi
-											Al-Azharning “Ekstremizmga qarshi kurashish observatoriyasi va elektron
-											fatvolar bo‘yicha
-											xalqaro markaz” faoliyati bilan yaqindan tanishdi.</p>
-										<a class="absolute bottom-0 group rounded transition-all border border-gray/20 hover:bg-white py-4 px-6 flex w-fit items-center text-black sm-up:relative"
-											href="#!">
-											Davomini o’qish
-											<svg class="inline transition-all ml-3 group-hover:translate-x-1" width="6" height="12"
-												viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M0.5 1L5.5 6L0.5 11" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-											</svg>
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide rounded border border-gray/10 pr-5 p-5 bg-white">
-								<div class="flex items-start space-x-8 relative sm-up:flex-col sm-up:space-x-0 sm-up:space-y-8">
-									<div class="max-w-270 w-full">
-										<img src="images/world-news-img1.png" alt="" width="270px" height="324px">
-									</div>
-									<div class="w-full h-full space-y-3">
-										<div class="flex items-center divide-x divide-gray/20 -mx-3">
-											<div class="flex items-center space-x-2 px-3">
-												<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path
-														d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z"
-														stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round"
-														stroke-linejoin="round" />
-												</svg>
-												<span class="text-gray text-xs font-normal">Matbuot hizmati</span>
-											</div>
-											<div class="flex items-center space-x-2 px-3">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-													stroke="currentColor" class="w-4 h-4">
-													<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round"
-														d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
-												</svg>
-												<span class="text-gray text-xs font-normal">May 14</span>
-											</div>
-											<div class="flex items-center space-x-2 pl-3">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-													class="w-4 h-4">
-													<path stroke-linecap="round" stroke="#666666" stroke-linejoin="round"
-														d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-													<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-												</svg>
-												<span class="text-gray text-xs font-normal">45</span>
-											</div>
-										</div>
-										<h3 class="text-black font-playfair text-xl font-medium">Ohirat boqiydir</h3>
-										<p class="text-sm font-normal text-black leading-6 line-clamp-6">«Ey Odam
-											farzandi! Menga xizmat
-											qil,
-											chunki
-											Menga xizmat qilgan kishini yaxshi ko‘raman va
-											bandalarimni ham unga xizmat
-											qildiraman. Albatta sen umringning o‘tgan qismini Menga qancha osiylik
-											qilganingni bilmaysan va
-											qolgan qismida ham
-											qancha osiylik qilishingni bilmaysan...</p>
-										<a class="absolute bottom-0 group rounded transition-all border border-gray/20 hover:bg-white py-4 px-6 flex w-fit items-center text-black sm-up:relative"
-											href="#!">
-											Davomini o’qish
-											<svg class="inline transition-all ml-3 group-hover:translate-x-1" width="6" height="12"
-												viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M0.5 1L5.5 6L0.5 11" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-											</svg>
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide rounded border border-gray/10 pr-5 p-5 bg-white">
-								<div class="flex items-start space-x-8 relative sm-up:flex-col sm-up:space-x-0 sm-up:space-y-8">
-									<div class="max-w-270 w-full">
-										<img src="images/world-news-img2.png" alt="world-news-img2" width="270px" height="324px">
-									</div>
-									<div class="w-full h-full space-y-3">
-										<div class="flex items-center divide-x divide-gray/20 -mx-3">
-											<div class="flex items-center space-x-2 px-3">
-												<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path
-														d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z"
-														stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round"
-														stroke-linejoin="round" />
-												</svg>
-												<span class="text-gray text-xs font-normal">Matbuot hizmati</span>
-											</div>
-											<div class="flex items-center space-x-2 px-3">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-													stroke="currentColor" class="w-4 h-4">
-													<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round"
-														d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
-												</svg>
-												<span class="text-gray text-xs font-normal">May 14</span>
-											</div>
-											<div class="flex items-center space-x-2 pl-3">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-													class="w-4 h-4">
-													<path stroke-linecap="round" stroke="#666666" stroke-linejoin="round"
-														d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-													<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-												</svg>
-												<span class="text-gray text-xs font-normal">45</span>
-											</div>
-										</div>
-										<h3 class="text-black font-playfair text-xl font-medium">O’zbekiston
-											delegaciyasi Al Azharga tashrif
-											buyurdi</h3>
-										<p class="text-sm font-normal text-black leading-6 line-clamp-6">O‘zbekiston
-											delegatsiyasi
-											Al-Azharning “Ekstremizmga qarshi kurashish observatoriyasi va elektron
-											fatvolar bo‘yicha
-											xalqaro markaz” faoliyati bilan yaqindan tanishdi.</p>
-										<a class="absolute bottom-0 group rounded transition-all border border-gray/20 hover:bg-white py-4 px-6 flex w-fit items-center text-black sm-up:relative"
-											href="#!">
-											Davomini o’qish
-											<svg class="inline transition-all ml-3 group-hover:translate-x-1" width="6" height="12"
-												viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M0.5 1L5.5 6L0.5 11" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-											</svg>
-										</a>
-									</div>
-								</div>
+					<div class="flex gap-6">
+						<div class="w-6/12 p-8 flex space-x-8 bg-white border border-body-light/20 rounded">
+							<img src="img/muftiy-hazrat-ho'ja-ishoqi-vali-masjidiga-tashrif-buyurdilar.png" width="270" height="332" alt="muftiy hazrat ho'ja ishoqi valiy masjidiga tashrif buyurdilar" class="w-4/12 object-cover">
+
+							<div class="space-y-3">
+								<p class="flex items-center text-xs divide-x divide-x-body-light/20 -mx-3 text-body-light">
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+
+
+										<span>Matbuot hizmati</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.5 1V2.5M10.5 1V2.5M1 11.5V4C1 3.60218 1.15804 3.22064 1.43934 2.93934C1.72064 2.65804 2.10218 2.5 2.5 2.5H11.5C11.8978 2.5 12.2794 2.65804 12.5607 2.93934C12.842 3.22064 13 3.60218 13 4V11.5M1 11.5C1 11.8978 1.15804 12.2794 1.43934 12.5607C1.72064 12.842 2.10218 13 2.5 13H11.5C11.8978 13 12.2794 12.842 12.5607 12.5607C12.842 12.2794 13 11.8978 13 11.5M1 11.5V6.5C1 6.10218 1.15804 5.72064 1.43934 5.43934C1.72064 5.15804 2.10218 5 2.5 5H11.5C11.8978 5 12.2794 5.15804 12.5607 5.43934C12.842 5.72064 13 6.10218 13 6.5V11.5M7 7.5H7.00533V7.50533H7V7.5ZM7 9H7.00533V9.00533H7V9ZM7 10.5H7.00533V10.5053H7V10.5ZM5.5 9H5.50533V9.00533H5.5V9ZM5.5 10.5H5.50533V10.5053H5.5V10.5ZM4 9H4.00533V9.00533H4V9ZM4 10.5H4.00533V10.5053H4V10.5ZM8.5 7.5H8.50533V7.50533H8.5V7.5ZM8.5 9H8.50533V9.00533H8.5V9ZM8.5 10.5H8.50533V10.5053H8.5V10.5ZM10 7.5H10.0053V7.50533H10V7.5ZM10 9H10.0053V9.00533H10V9Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+
+										<span>May 14</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.35732 8.21467C1.31131 8.07639 1.31131 7.92694 1.35732 7.78867C2.28199 5.00667 4.90665 3 7.99999 3C11.092 3 13.7153 5.00467 14.642 7.78533C14.6887 7.92333 14.6887 8.07267 14.642 8.21133C13.718 10.9933 11.0933 13 7.99999 13C4.90799 13 2.28399 10.9953 1.35732 8.21467Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+
+										<span>45</span>
+									</span>
+								</p>
+
+								<h3 class="text-h4">Muftiy hazrat «Ho’ja Ishoqi Vali» masjidiga tashrif buyurdilar</h3>
+
+								<p>Бугун, 25 июль куни Ўзбекистон мусулмонлари идораси раиси, муфтий Нуриддин домла ҳазратлари Самарқанд шаҳридаги “Хўжа Исҳоқи Вали” масжидига пешин намозига...</p>
+
+								<a href="#" class="inline-flex items-center space-x-1.5 px-6 py-4 !mt-6 rounded ring-1 ring-inset ring-body-light/20 bg-white">
+									<span>Davomini o'qish</span>
+									<svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.5 1L5.5 6L0.5 11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</a>
 							</div>
 						</div>
-						<div class="swiper-pagination flex justify-center	items-center"></div>
+
+						<div class="w-6/12 p-8 flex space-x-8 bg-white border border-body-light/20 rounded">
+							<img src="img/prezident-hakim-termiziy-maqbarasini-ziyorat-qildi.png" width="270" height="332" alt="prezident hakim termiziy maqbarasini ziyorat qildilar" class="w-4/12 object-cover">
+
+							<div class="space-y-3">
+								<p class="flex items-center text-xs divide-x divide-x-body-light/20 -mx-3 text-body-light">
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+
+
+										<span>Matbuot hizmati</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.5 1V2.5M10.5 1V2.5M1 11.5V4C1 3.60218 1.15804 3.22064 1.43934 2.93934C1.72064 2.65804 2.10218 2.5 2.5 2.5H11.5C11.8978 2.5 12.2794 2.65804 12.5607 2.93934C12.842 3.22064 13 3.60218 13 4V11.5M1 11.5C1 11.8978 1.15804 12.2794 1.43934 12.5607C1.72064 12.842 2.10218 13 2.5 13H11.5C11.8978 13 12.2794 12.842 12.5607 12.5607C12.842 12.2794 13 11.8978 13 11.5M1 11.5V6.5C1 6.10218 1.15804 5.72064 1.43934 5.43934C1.72064 5.15804 2.10218 5 2.5 5H11.5C11.8978 5 12.2794 5.15804 12.5607 5.43934C12.842 5.72064 13 6.10218 13 6.5V11.5M7 7.5H7.00533V7.50533H7V7.5ZM7 9H7.00533V9.00533H7V9ZM7 10.5H7.00533V10.5053H7V10.5ZM5.5 9H5.50533V9.00533H5.5V9ZM5.5 10.5H5.50533V10.5053H5.5V10.5ZM4 9H4.00533V9.00533H4V9ZM4 10.5H4.00533V10.5053H4V10.5ZM8.5 7.5H8.50533V7.50533H8.5V7.5ZM8.5 9H8.50533V9.00533H8.5V9ZM8.5 10.5H8.50533V10.5053H8.5V10.5ZM10 7.5H10.0053V7.50533H10V7.5ZM10 9H10.0053V9.00533H10V9Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+
+										<span>May 7</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.35732 8.21467C1.31131 8.07639 1.31131 7.92694 1.35732 7.78867C2.28199 5.00667 4.90665 3 7.99999 3C11.092 3 13.7153 5.00467 14.642 7.78533C14.6887 7.92333 14.6887 8.07267 14.642 8.21133C13.718 10.9933 11.0933 13 7.99999 13C4.90799 13 2.28399 10.9953 1.35732 8.21467Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+
+										<span>133</span>
+									</span>
+								</p>
+
+								<h3 class="text-h4">Prezident Hakim Termiziy maqbarasini ziyorat qildilar</h3>
+
+								<p>Ўзбекистон Республикаси Президенти Шавкат Мирзиёев Сурхондарё вилоятига ташриф буюрди. Давлатимиз раҳбари амалий сафарини, анъанага кўра, Ҳаким Термизий мақбараси.</p>
+
+								<a href="#" class="inline-flex items-center space-x-1.5 px-6 py-4 !mt-6 rounded ring-1 ring-inset ring-body-light/20 bg-white">
+									<span>Davomini o'qish</span>
+									<svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.5 1L5.5 6L0.5 11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</a>
+							</div>
+						</div>
 					</div>
+
+					<ul class="flex items-center justify-center space-x-2">
+						<li><button class="w-4 h-4 block rounded-full bg-body-light/20 overflow-hidden indent-10">1</button></li>
+						<li><button class="w-2 h-2 block rounded-full bg-body-light/20 overflow-hidden indent-10">1</button></li>
+						<li><button class="w-2 h-2 block rounded-full bg-body-light/20 overflow-hidden indent-10">1</button></li>
+						<li><button class="w-2 h-2 block rounded-full bg-body-light/20 overflow-hidden indent-10">1</button></li>
+						<li><button class="w-2 h-2 block rounded-full bg-body-light/20 overflow-hidden indent-10">1</button></li>
+					</ul>
 				</div>
 			</section>
-			<!-- world-news end -->
 
-			<!-- uzb-news sec start -->
-			<section class="uzb-news py-14">
-				<div class="container">
-					<div class="flex items-center justify-between sm-down:flex-col sm-down:items-start sm-down:space-y-2">
-						<h2 class="font-medium font-playfair text-4xl pt-1 sm-down:text-2xl">O’zbekiston yangiliklari
-						</h2>
-						<a href="#!" class="font-normal text-sm text-link underline hover:no-underline">Barchasini
-							ko’rish</a>
+			<section class="py-14 bg-link/5 border-body-light/10 border-y">
+				<div class="container space-y-9">
+					<div class="flex items-center justify-between">
+						<h1 class="text-h2">Videolavhalar</h1>
+
+						<a href="#" class="text-link underline hover:no-underline">Barchasini ko'rish</a>
 					</div>
 
-					<div class="swiper mySwiper mt-9">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide rounded border border-gray/10 pr-5 p-5 bg-white">
-								<div class="flex items-start space-x-8 relative sm-up:flex-col sm-up:space-x-0 sm-up:space-y-8">
-									<div class="max-w-270 w-full">
-										<img src="images/uzbekistan-news-img1.png" alt="uzbekistan-news-img1" width="270px" height="324px">
-									</div>
-									<div class="w-full h-full space-y-3">
-										<div class="flex items-center divide-x divide-gray/20 -mx-3">
-											<div class="flex items-center space-x-2 px-3">
-												<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path
-														d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z"
-														stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round"
-														stroke-linejoin="round" />
-												</svg>
-												<span class="text-gray text-xs font-normal">Matbuot hizmati</span>
-											</div>
-											<div class="flex items-center space-x-2 px-3">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-													stroke="currentColor" class="w-4 h-4">
-													<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round"
-														d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
-												</svg>
+					<div class="space-y-8">
+						<div class="flex gap-6">
+							<div class="w-6/12 space-y-3 group">
+								<div class="relative before:content-[''] before:absolute before:inset-0 before:bg-black/50">
+									<img src="img/ramazon-hayiti-tabrigi-video.png" width="630" height="324" alt="ramazon hayiti tabrigi" class="w-full object-cover">
+									<button class="text-white absolute inset-0 flex items-center justify-center">
+										<svg width="39" height="42" viewBox="0 0 39 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:scale-150 transition duration-300">
+											<path d="M1 4.07464C1 1.79197 3.44533 0.346636 5.44533 1.4453L36.2187 18.3733C36.689 18.6323 37.0813 19.0127 37.3544 19.475C37.6276 19.9373 37.7717 20.4644 37.7717 21.0013C37.7717 21.5382 37.6276 22.0653 37.3544 22.5276C37.0813 22.9899 36.689 23.3703 36.2187 23.6293L5.44533 40.5546C4.98869 40.8057 4.47453 40.9335 3.95349 40.9254C3.43245 40.9173 2.9225 40.7737 2.47386 40.5086C2.02523 40.2435 1.65338 39.8661 1.39494 39.4136C1.1365 38.9611 1.00038 38.4491 1 37.928V4.07464Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
 
-												<span class="text-gray text-xs font-normal">May 14</span>
-											</div>
-											<div class="flex items-center space-x-2 pl-3">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-													class="w-4 h-4">
-													<path stroke-linecap="round" stroke="#666666" stroke-linejoin="round"
-														d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-													<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-												</svg>
-												<span class="text-gray text-xs font-normal">45</span>
-											</div>
-										</div>
-										<h3 class="text-black font-playfair text-xl font-medium line-clamp-2">Muftiy
-											hazrat «Ho’ja Ishoqi Vali» masjidiga
-											tashrif buyurdilar</h3>
-										<p class="text-sm font-normal text-black leading-6 line-clamp-6">Бугун, 25 июль
-											куни Ўзбекистон
-											мусулмонлари идораси раиси, муфтий Нуриддин домла ҳазратлари Самарқанд
-											шаҳридаги “Хўжа
-											Исҳоқи Вали” масжидига пешин намозига...</p>
-										<a class="absolute bottom-0 group rounded transition-all border border-gray/20 hover:bg-white py-4 px-6 flex w-fit items-center text-black sm-up:relative"
-											href="#!">
-											Davomini o’qish
-											<svg class="inline transition-all ml-3 group-hover:translate-x-1" width="6" height="12"
-												viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M0.5 1L5.5 6L0.5 11" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-											</svg>
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide rounded border border-gray/10 pr-5 p-5 bg-white">
-								<div class="flex items-start space-x-8 relative sm-up:flex-col sm-up:space-x-0 sm-up:space-y-8">
-									<div class="max-w-270 w-full">
-										<img src="images/uzbekistan-news-img2.png" alt="uzbekistan-news-img2" width="270px" height="324px">
-									</div>
-									<div class="w-full h-full space-y-3">
-										<div class="flex items-center divide-x divide-gray/20 -mx-3">
-											<div class="flex items-center space-x-2 px-3">
-												<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path
-														d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z"
-														stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round"
-														stroke-linejoin="round" />
-												</svg>
-												<span class="text-gray text-xs font-normal">Matbuot hizmati</span>
-											</div>
-											<div class="flex items-center space-x-2 px-3">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-													stroke="currentColor" class="w-4 h-4">
-													<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round"
-														d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
-												</svg>
+								<p class="!mt-6 flex items-center text-xs divide-x divide-x-body-light/20 -mx-3 text-body-light">
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
 
-												<span class="text-gray text-xs font-normal">May 14</span>
-											</div>
-											<div class="flex items-center space-x-2 pl-3">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-													class="w-4 h-4">
-													<path stroke-linecap="round" stroke="#666666" stroke-linejoin="round"
-														d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-													<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-												</svg>
-												<span class="text-gray text-xs font-normal">45</span>
-											</div>
-										</div>
-										<h3 class="text-black font-playfair text-xl font-medium line-clamp-2">Prezident
-											Hakim Termiziy maqbarasini
-											ziyorat qildilar</h3>
-										<p class="text-sm font-normal text-black leading-6 line-clamp-6">Ўзбекистон
-											Республикаси Президенти
-											Шавкат Мирзиёев Сурхондарё вилоятига ташриф буюрди. Давлатимиз раҳбари
-											амалий
-											сафарини, анъанага кўра, Ҳаким Термизий мақбараси...</p>
-										<a class="absolute bottom-0 group rounded transition-all border border-gray/20 hover:bg-white py-4 px-6 flex w-fit items-center text-black sm-up:relative"
-											href="#!">
-											Davomini o’qish
-											<svg class="inline transition-all ml-3 group-hover:translate-x-1" width="6" height="12"
-												viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M0.5 1L5.5 6L0.5 11" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-											</svg>
-										</a>
-									</div>
-								</div>
+										<span>Matbuot hizmati</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.5 1V2.5M10.5 1V2.5M1 11.5V4C1 3.60218 1.15804 3.22064 1.43934 2.93934C1.72064 2.65804 2.10218 2.5 2.5 2.5H11.5C11.8978 2.5 12.2794 2.65804 12.5607 2.93934C12.842 3.22064 13 3.60218 13 4V11.5M1 11.5C1 11.8978 1.15804 12.2794 1.43934 12.5607C1.72064 12.842 2.10218 13 2.5 13H11.5C11.8978 13 12.2794 12.842 12.5607 12.5607C12.842 12.2794 13 11.8978 13 11.5M1 11.5V6.5C1 6.10218 1.15804 5.72064 1.43934 5.43934C1.72064 5.15804 2.10218 5 2.5 5H11.5C11.8978 5 12.2794 5.15804 12.5607 5.43934C12.842 5.72064 13 6.10218 13 6.5V11.5M7 7.5H7.00533V7.50533H7V7.5ZM7 9H7.00533V9.00533H7V9ZM7 10.5H7.00533V10.5053H7V10.5ZM5.5 9H5.50533V9.00533H5.5V9ZM5.5 10.5H5.50533V10.5053H5.5V10.5ZM4 9H4.00533V9.00533H4V9ZM4 10.5H4.00533V10.5053H4V10.5ZM8.5 7.5H8.50533V7.50533H8.5V7.5ZM8.5 9H8.50533V9.00533H8.5V9ZM8.5 10.5H8.50533V10.5053H8.5V10.5ZM10 7.5H10.0053V7.50533H10V7.5ZM10 9H10.0053V9.00533H10V9Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+
+										<span>May 14</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.35732 8.21467C1.31131 8.07639 1.31131 7.92694 1.35732 7.78867C2.28199 5.00667 4.90665 3 7.99999 3C11.092 3 13.7153 5.00467 14.642 7.78533C14.6887 7.92333 14.6887 8.07267 14.642 8.21133C13.718 10.9933 11.0933 13 7.99999 13C4.90799 13 2.28399 10.9953 1.35732 8.21467Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+
+										<span>45</span>
+									</span>
+								</p>
+								<h3 class="text-h4">Ramazon hayiti tabrigi</h3>
+								<p>O’zbekiston Respublikasi Musulmonlari idorasi raisi, muftiy hazratlari barcha vatandoshlarni Ramazon hayiti bilan muborakbod ettilar.</p>
 							</div>
-							<div class="swiper-slide rounded border border-gray/10 pr-5 p-5 bg-white">
-								<div class="flex items-start space-x-8 relative sm-up:flex-col sm-up:space-x-0 sm-up:space-y-8">
-									<div class="max-w-270 w-full">
-										<img src="images/uzbekistan-news-img1.png" alt="uzbekistan-news-img1" width="270px" height="324px">
-									</div>
-									<div class="w-full h-full space-y-3">
-										<div class="flex items-center divide-x divide-gray/20 -mx-3">
-											<div class="flex items-center space-x-2 px-3">
-												<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path
-														d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z"
-														stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round"
-														stroke-linejoin="round" />
-												</svg>
-												<span class="text-gray text-xs font-normal">Matbuot hizmati</span>
-											</div>
-											<div class="flex items-center space-x-2 px-3">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-													stroke="currentColor" class="w-4 h-4">
-													<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round"
-														d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
-												</svg>
-							
-												<span class="text-gray text-xs font-normal">May 14</span>
-											</div>
-											<div class="flex items-center space-x-2 pl-3">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-													class="w-4 h-4">
-													<path stroke-linecap="round" stroke="#666666" stroke-linejoin="round"
-														d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-													<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-												</svg>
-												<span class="text-gray text-xs font-normal">45</span>
-											</div>
-										</div>
-										<h3 class="text-black font-playfair text-xl font-medium line-clamp-2">Muftiy
-											hazrat «Ho’ja Ishoqi Vali» masjidiga
-											tashrif buyurdilar</h3>
-										<p class="text-sm font-normal text-black leading-6 line-clamp-6">Бугун, 25 июль
-											куни Ўзбекистон
-											мусулмонлари идораси раиси, муфтий Нуриддин домла ҳазратлари Самарқанд
-											шаҳридаги “Хўжа
-											Исҳоқи Вали” масжидига пешин намозига...</p>
-										<a class="absolute bottom-0 group rounded transition-all border border-gray/20 hover:bg-white py-4 px-6 flex w-fit items-center text-black sm-up:relative"
-											href="#!">
-											Davomini o’qish
-											<svg class="inline transition-all ml-3 group-hover:translate-x-1" width="6" height="12" viewBox="0 0 6 12"
-												fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M0.5 1L5.5 6L0.5 11" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-											</svg>
-										</a>
-									</div>
+
+							<div class="w-6/12 space-y-3 rounded group">
+								<div class="relative before:content-[''] before:absolute before:inset-0 before:bg-black/50">
+									<img src="img/islom-civilizaciya-markazi-qurilishi-qanday-bosqichda-video.png" width="630" height="324" alt="islom civilizaciya markazining qurilishi qanday boshqichda" class="w-full object-cover">
+									<button class="text-white absolute inset-0 flex items-center justify-center">
+										<svg width="39" height="42" viewBox="0 0 39 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:scale-150 transition duration-300">
+											<path d="M1 4.07464C1 1.79197 3.44533 0.346636 5.44533 1.4453L36.2187 18.3733C36.689 18.6323 37.0813 19.0127 37.3544 19.475C37.6276 19.9373 37.7717 20.4644 37.7717 21.0013C37.7717 21.5382 37.6276 22.0653 37.3544 22.5276C37.0813 22.9899 36.689 23.3703 36.2187 23.6293L5.44533 40.5546C4.98869 40.8057 4.47453 40.9335 3.95349 40.9254C3.43245 40.9173 2.9225 40.7737 2.47386 40.5086C2.02523 40.2435 1.65338 39.8661 1.39494 39.4136C1.1365 38.9611 1.00038 38.4491 1 37.928V4.07464Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
 								</div>
-							</div>
-							<div class="swiper-slide rounded border border-gray/10 pr-5 p-5 bg-white">
-								<div class="flex items-start space-x-8 relative sm-up:flex-col sm-up:space-x-0 sm-up:space-y-8">
-									<div class="max-w-270 w-full">
-										<img src="images/uzbekistan-news-img2.png" alt="uzbekistan-news-img2" width="270px" height="324px">
-									</div>
-									<div class="w-full h-full space-y-3">
-										<div class="flex items-center divide-x divide-gray/20 -mx-3">
-											<div class="flex items-center space-x-2 px-3">
-												<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path
-														d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z"
-														stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round"
-														stroke-linejoin="round" />
-												</svg>
-												<span class="text-gray text-xs font-normal">Matbuot hizmati</span>
-											</div>
-											<div class="flex items-center space-x-2 px-3">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-													stroke="currentColor" class="w-4 h-4">
-													<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round"
-														d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
-												</svg>
-							
-												<span class="text-gray text-xs font-normal">May 14</span>
-											</div>
-											<div class="flex items-center space-x-2 pl-3">
-												<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-													class="w-4 h-4">
-													<path stroke-linecap="round" stroke="#666666" stroke-linejoin="round"
-														d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-													<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-												</svg>
-												<span class="text-gray text-xs font-normal">45</span>
-											</div>
-										</div>
-										<h3 class="text-black font-playfair text-xl font-medium line-clamp-2">Prezident
-											Hakim Termiziy maqbarasini
-											ziyorat qildilar</h3>
-										<p class="text-sm font-normal text-black leading-6 line-clamp-6">Ўзбекистон
-											Республикаси Президенти
-											Шавкат Мирзиёев Сурхондарё вилоятига ташриф буюрди. Давлатимиз раҳбари
-											амалий
-											сафарини, анъанага кўра, Ҳаким Термизий мақбараси...</p>
-										<a class="absolute bottom-0 group rounded transition-all border border-gray/20 hover:bg-white py-4 px-6 flex w-fit items-center text-black sm-up:relative"
-											href="#!">
-											Davomini o’qish
-											<svg class="inline transition-all ml-3 group-hover:translate-x-1" width="6" height="12" viewBox="0 0 6 12"
-												fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M0.5 1L5.5 6L0.5 11" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" />
-											</svg>
-										</a>
-									</div>
-								</div>
+
+								<p class="!mt-6 flex items-center text-xs divide-x divide-x-body-light/20 -mx-3 text-body-light">
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+
+										<span>Matbuot hizmati</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.5 1V2.5M10.5 1V2.5M1 11.5V4C1 3.60218 1.15804 3.22064 1.43934 2.93934C1.72064 2.65804 2.10218 2.5 2.5 2.5H11.5C11.8978 2.5 12.2794 2.65804 12.5607 2.93934C12.842 3.22064 13 3.60218 13 4V11.5M1 11.5C1 11.8978 1.15804 12.2794 1.43934 12.5607C1.72064 12.842 2.10218 13 2.5 13H11.5C11.8978 13 12.2794 12.842 12.5607 12.5607C12.842 12.2794 13 11.8978 13 11.5M1 11.5V6.5C1 6.10218 1.15804 5.72064 1.43934 5.43934C1.72064 5.15804 2.10218 5 2.5 5H11.5C11.8978 5 12.2794 5.15804 12.5607 5.43934C12.842 5.72064 13 6.10218 13 6.5V11.5M7 7.5H7.00533V7.50533H7V7.5ZM7 9H7.00533V9.00533H7V9ZM7 10.5H7.00533V10.5053H7V10.5ZM5.5 9H5.50533V9.00533H5.5V9ZM5.5 10.5H5.50533V10.5053H5.5V10.5ZM4 9H4.00533V9.00533H4V9ZM4 10.5H4.00533V10.5053H4V10.5ZM8.5 7.5H8.50533V7.50533H8.5V7.5ZM8.5 9H8.50533V9.00533H8.5V9ZM8.5 10.5H8.50533V10.5053H8.5V10.5ZM10 7.5H10.0053V7.50533H10V7.5ZM10 9H10.0053V9.00533H10V9Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+
+										<span>May 12</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.35732 8.21467C1.31131 8.07639 1.31131 7.92694 1.35732 7.78867C2.28199 5.00667 4.90665 3 7.99999 3C11.092 3 13.7153 5.00467 14.642 7.78533C14.6887 7.92333 14.6887 8.07267 14.642 8.21133C13.718 10.9933 11.0933 13 7.99999 13C4.90799 13 2.28399 10.9953 1.35732 8.21467Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+
+										<span>82</span>
+									</span>
+								</p>
+								<h3 class="text-h4">Islom Civilizaciyasi Markazining qurilishi qanday bosqichda?</h3>
+								<p>Islom Civilizicasiyasi Markazining qurilishi qanday boshqichda? Bu markaz yurtimiz, halqimiz uchun qanchalik ahamiyatli? Markaz bunyod etilgach, Eski shaxat qay darajada..</p>
 							</div>
 						</div>
-						<div class="swiper-pagination flex justify-center	items-center"></div>
-					</div>
-				</div>
-			</section>
-			<!-- uzb-news sec end -->
 
+						<div class="flex gap-6">
+							<div class="w-3/12 space-y-3 group">
+								<div class="relative before:content-[''] before:absolute before:inset-0 before:bg-black/50">
+									<img src="img/homidjon-ismatbekov-bilan-suhbat-video.png" width="303" height="200" alt="homidjon ismatbekov bilan suhbat" class="w-full object-cover">
+									<button class="text-white absolute inset-0 flex items-center justify-center">
+										<svg width="39" height="42" viewBox="0 0 39 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:scale-150 transition duration-300">
+											<path d="M1 4.07464C1 1.79197 3.44533 0.346636 5.44533 1.4453L36.2187 18.3733C36.689 18.6323 37.0813 19.0127 37.3544 19.475C37.6276 19.9373 37.7717 20.4644 37.7717 21.0013C37.7717 21.5382 37.6276 22.0653 37.3544 22.5276C37.0813 22.9899 36.689 23.3703 36.2187 23.6293L5.44533 40.5546C4.98869 40.8057 4.47453 40.9335 3.95349 40.9254C3.43245 40.9173 2.9225 40.7737 2.47386 40.5086C2.02523 40.2435 1.65338 39.8661 1.39494 39.4136C1.1365 38.9611 1.00038 38.4491 1 37.928V4.07464Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
+								</div>
 
-			<!-- videos-sec start -->
-			<section class="pb-14 bg-world-news-bg">
-				<div class="container">
-					<div class="main__videos-wrap pt-14">
-						<div class="flex items-center justify-between pb-9 sm-down:flex-col sm-down:items-start sm-down:space-y-2">
-							<h2 class="font-medium  font-playfair text-4xl pt-1">Videolavhalar</h2>
-							<a href="#!" class="font-normal text-sm text-link underline hover:no-underline">Barchasini
-								ko’rish</a>
-						</div>
-						<div class="w-full flex gap-6 mb-5 lg-down:flex-col">
-							<div class="w-2/4 lg-down:w-full ">
-								<div class="relative cursor-pointer group w-full bg-box">
-									<img class="w-full -z-10 relative" src="images/videos-main-1.png " alt="">
-									<img
-										class="absolute translate-x-[-50%] translate-y-[-50%] inset-1/2 group-hover:scale-125 transition-all"
-										src="./images/icons/videos-play.svg" alt="">
-								</div>
-								<div class=" gap-4 mt-6 flex items-center divide-x divide-gray/20 pb-3">
-									<div class="flex items-center space-x-2">
+								<p class="!mt-6 flex items-center text-xs divide-x divide-x-body-light/20 -mx-3 text-body-light">
+									<span class="flex items-center px-3 space-x-1.5">
 										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z"
-												stroke="#666666" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round"
-												stroke-linejoin="round"></path>
+											<path d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg>
-										<span class="text-gray text-xs font-normal">Matbuot hizmati</span>
-									</div>
-									<div class="flex items-center space-x-2 line-box pl-3">
-										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-											stroke="currentColor" class="w-4 h-4">
-											<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round"
-												d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+
+										<span>Matbuot hizmati</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.5 1V2.5M10.5 1V2.5M1 11.5V4C1 3.60218 1.15804 3.22064 1.43934 2.93934C1.72064 2.65804 2.10218 2.5 2.5 2.5H11.5C11.8978 2.5 12.2794 2.65804 12.5607 2.93934C12.842 3.22064 13 3.60218 13 4V11.5M1 11.5C1 11.8978 1.15804 12.2794 1.43934 12.5607C1.72064 12.842 2.10218 13 2.5 13H11.5C11.8978 13 12.2794 12.842 12.5607 12.5607C12.842 12.2794 13 11.8978 13 11.5M1 11.5V6.5C1 6.10218 1.15804 5.72064 1.43934 5.43934C1.72064 5.15804 2.10218 5 2.5 5H11.5C11.8978 5 12.2794 5.15804 12.5607 5.43934C12.842 5.72064 13 6.10218 13 6.5V11.5M7 7.5H7.00533V7.50533H7V7.5ZM7 9H7.00533V9.00533H7V9ZM7 10.5H7.00533V10.5053H7V10.5ZM5.5 9H5.50533V9.00533H5.5V9ZM5.5 10.5H5.50533V10.5053H5.5V10.5ZM4 9H4.00533V9.00533H4V9ZM4 10.5H4.00533V10.5053H4V10.5ZM8.5 7.5H8.50533V7.50533H8.5V7.5ZM8.5 9H8.50533V9.00533H8.5V9ZM8.5 10.5H8.50533V10.5053H8.5V10.5ZM10 7.5H10.0053V7.50533H10V7.5ZM10 9H10.0053V9.00533H10V9Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg>
-										<span class="text-gray text-xs font-normal">May 14</span>
-									</div>
-									<div class="flex items-center space-x-2 pl-3">
-										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-											class="w-4 h-4">
-											<path stroke-linecap="round" stroke="#666666" stroke-linejoin="round"
-												d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-											<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+
+										<span>May 10</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.35732 8.21467C1.31131 8.07639 1.31131 7.92694 1.35732 7.78867C2.28199 5.00667 4.90665 3 7.99999 3C11.092 3 13.7153 5.00467 14.642 7.78533C14.6887 7.92333 14.6887 8.07267 14.642 8.21133C13.718 10.9933 11.0933 13 7.99999 13C4.90799 13 2.28399 10.9953 1.35732 8.21467Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg>
-										<span class="text-gray text-xs font-normal">45</span>
-									</div>
-								</div>
-								<div class="max-sm:flex max-sm:flex-col max-md:text-left">
-									<h3 class="text-black font-playfair text-xl  font-medium pb-3">Ramazon hayiti
-										tabrigi</h3>
-									<p class="text-sm font-normal text-black leading-[161%]">O’zbekiston Respublikasi
-										Musulmonlari idorasi raisi, muftiy hazratlari barcha vatandoshlarni Ramazon
-										hayiti bilan muborakbod ettilar.
-								</div>
+
+										<span>102</span>
+									</span>
+								</p>
+								<h3 class="text-h4">Homidjon Ismatbekov bilan suhbat</h3>
 							</div>
-							<div class="w-2/4 lg-down:w-full">
-								<div class="relative cursor-pointer group w-full bg-box">
-									<img class="w-full -z-10 relative" src="images/videos-main-2.png " alt="">
-									<img
-										class="absolute translate-x-[-50%] translate-y-[-50%] inset-1/2 group-hover:scale-125 transition-all"
-										src="./images/icons/videos-play.svg" alt="">
+
+							<div class="w-3/12 space-y-3 group">
+								<div class="relative before:content-[''] before:absolute before:inset-0 before:bg-black/50">
+									<img src="img/mehnatsevar-halqimiz-bor-nima-gamimiz-bor-video.png" width="303" height="200" alt="mehnatsevar halqimiz bor nima g'amimiz bor" class="w-full object-cover">
+									<button class="text-white absolute inset-0 flex items-center justify-center">
+										<svg width="39" height="42" viewBox="0 0 39 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:scale-150 transition duration-300">
+											<path d="M1 4.07464C1 1.79197 3.44533 0.346636 5.44533 1.4453L36.2187 18.3733C36.689 18.6323 37.0813 19.0127 37.3544 19.475C37.6276 19.9373 37.7717 20.4644 37.7717 21.0013C37.7717 21.5382 37.6276 22.0653 37.3544 22.5276C37.0813 22.9899 36.689 23.3703 36.2187 23.6293L5.44533 40.5546C4.98869 40.8057 4.47453 40.9335 3.95349 40.9254C3.43245 40.9173 2.9225 40.7737 2.47386 40.5086C2.02523 40.2435 1.65338 39.8661 1.39494 39.4136C1.1365 38.9611 1.00038 38.4491 1 37.928V4.07464Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
 								</div>
-								<div class=" gap-4 mt-6 flex items-center divide-x divide-gray/20 pb-3">
-									<div class="flex items-center space-x-2">
+
+								<p class="!mt-6 flex items-center text-xs divide-x divide-x-body-light/20 -mx-3 text-body-light">
+									<span class="flex items-center px-3 space-x-1.5">
 										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z"
-												stroke="#666666" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round"
-												stroke-linejoin="round"></path>
+											<path d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg>
-										<span class="text-gray text-xs font-normal">Matbuot hizmati</span>
-									</div>
-									<div class="flex items-center space-x-2 line-box pl-3">
-										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-											stroke="currentColor" class="w-4 h-4">
-											<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round"
-												d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+
+										<span>Matbuot hizmati</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.5 1V2.5M10.5 1V2.5M1 11.5V4C1 3.60218 1.15804 3.22064 1.43934 2.93934C1.72064 2.65804 2.10218 2.5 2.5 2.5H11.5C11.8978 2.5 12.2794 2.65804 12.5607 2.93934C12.842 3.22064 13 3.60218 13 4V11.5M1 11.5C1 11.8978 1.15804 12.2794 1.43934 12.5607C1.72064 12.842 2.10218 13 2.5 13H11.5C11.8978 13 12.2794 12.842 12.5607 12.5607C12.842 12.2794 13 11.8978 13 11.5M1 11.5V6.5C1 6.10218 1.15804 5.72064 1.43934 5.43934C1.72064 5.15804 2.10218 5 2.5 5H11.5C11.8978 5 12.2794 5.15804 12.5607 5.43934C12.842 5.72064 13 6.10218 13 6.5V11.5M7 7.5H7.00533V7.50533H7V7.5ZM7 9H7.00533V9.00533H7V9ZM7 10.5H7.00533V10.5053H7V10.5ZM5.5 9H5.50533V9.00533H5.5V9ZM5.5 10.5H5.50533V10.5053H5.5V10.5ZM4 9H4.00533V9.00533H4V9ZM4 10.5H4.00533V10.5053H4V10.5ZM8.5 7.5H8.50533V7.50533H8.5V7.5ZM8.5 9H8.50533V9.00533H8.5V9ZM8.5 10.5H8.50533V10.5053H8.5V10.5ZM10 7.5H10.0053V7.50533H10V7.5ZM10 9H10.0053V9.00533H10V9Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg>
-										<span class="text-gray text-xs font-normal">May 14</span>
-									</div>
-									<div class="flex items-center space-x-2 pl-3">
-										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-											class="w-4 h-4">
-											<path stroke-linecap="round" stroke="#666666" stroke-linejoin="round"
-												d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-											<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+
+										<span>May 8</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.35732 8.21467C1.31131 8.07639 1.31131 7.92694 1.35732 7.78867C2.28199 5.00667 4.90665 3 7.99999 3C11.092 3 13.7153 5.00467 14.642 7.78533C14.6887 7.92333 14.6887 8.07267 14.642 8.21133C13.718 10.9933 11.0933 13 7.99999 13C4.90799 13 2.28399 10.9953 1.35732 8.21467Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg>
-										<span class="text-gray text-xs font-normal">45</span>
-									</div>
-								</div>
-								<div class="max-sm:flex max-sm:flex-col max-md:text-left">
-									<h3 class="text-black font-playfair text-xl font-medium pb-3">Islom Civilizaciyasi
-										Markazining
-										qurilishi qanday bosqichda?</h3>
-									<p class="text-sm font-normal text-black leading-[161%]">Islom Civilizicasiyasi
-										Markazining qurilishi qanday boshqichda? Bu markaz yurtimiz, halqimiz uchun
-										qanchalik ahamiyatli? Markaz bunyod etilgach, Eski shaxat qay darajada..
-								</div>
+
+										<span>122</span>
+									</span>
+								</p>
+								<h3 class="text-h4">Mehnatsevar halqimiz bor nima g’amimiz bor</h3>
 							</div>
-						</div>
-						<div class="flex w-full gap-6 mb-8 lg-down:flex-wrap ">
-							<div class="w-1/4 lg-down:w-48f md-down:w-full">
-								<div class="w-full relative cursor-pointer h-52 group bg-box">
-									<img class="w-full h-full relative -z-10 object-cover" src="images/videos-1.png " alt="">
-									<img
-										class="absolute z-10 translate-x-[-50%] translate-y-[-50%] inset-1/2 group-hover:scale-125 transition-all"
-										src="./images/icons/videos-play.svg" alt="">
+
+							<div class="w-3/12 space-y-3 group">
+								<div class="relative before:content-[''] before:absolute before:inset-0 before:bg-black/50">
+									<img src="img/nima-sababdan-bomdod-namoziga-uygonmaysiz-video.png" width="303" height="200" alt="nima sababdan bomdod namoziga uyg'onmaysiz" class="w-full object-cover">
+									<button class="text-white absolute inset-0 flex items-center justify-center">
+										<svg width="39" height="42" viewBox="0 0 39 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:scale-150 transition duration-300">
+											<path d="M1 4.07464C1 1.79197 3.44533 0.346636 5.44533 1.4453L36.2187 18.3733C36.689 18.6323 37.0813 19.0127 37.3544 19.475C37.6276 19.9373 37.7717 20.4644 37.7717 21.0013C37.7717 21.5382 37.6276 22.0653 37.3544 22.5276C37.0813 22.9899 36.689 23.3703 36.2187 23.6293L5.44533 40.5546C4.98869 40.8057 4.47453 40.9335 3.95349 40.9254C3.43245 40.9173 2.9225 40.7737 2.47386 40.5086C2.02523 40.2435 1.65338 39.8661 1.39494 39.4136C1.1365 38.9611 1.00038 38.4491 1 37.928V4.07464Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
 								</div>
-								<div class=" gap-4 mt-6 flex items-center divide-x divide-gray/20 pb-3">
-									<div class="flex items-center space-x-2">
+
+								<p class="!mt-6 flex items-center text-xs divide-x divide-x-body-light/20 -mx-3 text-body-light">
+									<span class="flex items-center px-3 space-x-1.5">
 										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z"
-												stroke="#666666" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round"
-												stroke-linejoin="round"></path>
+											<path d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg>
-										<span class="text-gray text-xs font-normal">Matbuot hizmati</span>
-									</div>
-									<div class="flex items-center space-x-2 line-box pl-3">
-										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-											stroke="currentColor" class="w-4 h-4">
-											<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round"
-												d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+
+										<span>Matbuot hizmati</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.5 1V2.5M10.5 1V2.5M1 11.5V4C1 3.60218 1.15804 3.22064 1.43934 2.93934C1.72064 2.65804 2.10218 2.5 2.5 2.5H11.5C11.8978 2.5 12.2794 2.65804 12.5607 2.93934C12.842 3.22064 13 3.60218 13 4V11.5M1 11.5C1 11.8978 1.15804 12.2794 1.43934 12.5607C1.72064 12.842 2.10218 13 2.5 13H11.5C11.8978 13 12.2794 12.842 12.5607 12.5607C12.842 12.2794 13 11.8978 13 11.5M1 11.5V6.5C1 6.10218 1.15804 5.72064 1.43934 5.43934C1.72064 5.15804 2.10218 5 2.5 5H11.5C11.8978 5 12.2794 5.15804 12.5607 5.43934C12.842 5.72064 13 6.10218 13 6.5V11.5M7 7.5H7.00533V7.50533H7V7.5ZM7 9H7.00533V9.00533H7V9ZM7 10.5H7.00533V10.5053H7V10.5ZM5.5 9H5.50533V9.00533H5.5V9ZM5.5 10.5H5.50533V10.5053H5.5V10.5ZM4 9H4.00533V9.00533H4V9ZM4 10.5H4.00533V10.5053H4V10.5ZM8.5 7.5H8.50533V7.50533H8.5V7.5ZM8.5 9H8.50533V9.00533H8.5V9ZM8.5 10.5H8.50533V10.5053H8.5V10.5ZM10 7.5H10.0053V7.50533H10V7.5ZM10 9H10.0053V9.00533H10V9Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg>
-										<span class="text-gray text-xs font-normal">May 14</span>
-									</div>
-									<div class="flex items-center space-x-2 pl-3">
-										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-											class="w-4 h-4">
-											<path stroke-linecap="round" stroke="#666666" stroke-linejoin="round"
-												d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-											<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+
+										<span>May 6</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.35732 8.21467C1.31131 8.07639 1.31131 7.92694 1.35732 7.78867C2.28199 5.00667 4.90665 3 7.99999 3C11.092 3 13.7153 5.00467 14.642 7.78533C14.6887 7.92333 14.6887 8.07267 14.642 8.21133C13.718 10.9933 11.0933 13 7.99999 13C4.90799 13 2.28399 10.9953 1.35732 8.21467Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg>
-										<span class="text-gray text-xs font-normal">45</span>
-									</div>
-								</div>
-								<div>
-									<h3 class="text-black font-playfair text-xl font-medium ">Homidjon Ishmatbekov bilan
-										suhbat</h3>
-								</div>
+
+										<span>218</span>
+									</span>
+								</p>
+								<h3 class="text-h4">Nima sababdan Bomdod namoziga uyg’onmaysiz?</h3>
 							</div>
-							<div class="w-1/4 lg-down:w-48f md-down:w-full">
-								<div
-									class="bg-videos-4 bg-cover bg-center bg-no-repeat w-full h-52 relative cursor-pointer group bg-box">
-									<img class="w-full h-full -z-10 relative object-cover" src="images/videos-2.png " alt="">
-									<img
-										class="absolute z-10 translate-x-[-50%] translate-y-[-50%] inset-1/2 group-hover:scale-125 transition-all"
-										src="./images/icons/videos-play.svg" alt="">
+
+							<div class="w-3/12 space-y-3 group">
+								<div class="relative before:content-[''] before:absolute before:inset-0 before:bg-black/50">
+									<img src="img/qadriyatlar-tiklangan-yangi-ozbekiston-video.png" width="303" height="200" alt="qadriyatlar tilklangan yangi o'zbekiston vatanim mening" class="w-full object-cover">
+									<button class="text-white absolute inset-0 flex items-center justify-center">
+										<svg width="39" height="42" viewBox="0 0 39 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:scale-150 transition duration-300">
+											<path d="M1 4.07464C1 1.79197 3.44533 0.346636 5.44533 1.4453L36.2187 18.3733C36.689 18.6323 37.0813 19.0127 37.3544 19.475C37.6276 19.9373 37.7717 20.4644 37.7717 21.0013C37.7717 21.5382 37.6276 22.0653 37.3544 22.5276C37.0813 22.9899 36.689 23.3703 36.2187 23.6293L5.44533 40.5546C4.98869 40.8057 4.47453 40.9335 3.95349 40.9254C3.43245 40.9173 2.9225 40.7737 2.47386 40.5086C2.02523 40.2435 1.65338 39.8661 1.39494 39.4136C1.1365 38.9611 1.00038 38.4491 1 37.928V4.07464Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</button>
 								</div>
-								<div class=" gap-4 mt-6 flex items-center divide-x divide-gray/20 pb-3">
-									<div class="flex items-center space-x-2">
+
+								<p class="!mt-6 flex items-center text-xs divide-x divide-x-body-light/20 -mx-3 text-body-light">
+									<span class="flex items-center px-3 space-x-1.5">
 										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z"
-												stroke="#666666" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round"
-												stroke-linejoin="round"></path>
+											<path d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg>
-										<span class="text-gray text-xs font-normal">Matbuot hizmati</span>
-									</div>
-									<div class="flex items-center space-x-2 line-box pl-3">
-										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-											stroke="currentColor" class="w-4 h-4">
-											<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round"
-												d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+
+										<span>Matbuot hizmati</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
+										<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M3.5 1V2.5M10.5 1V2.5M1 11.5V4C1 3.60218 1.15804 3.22064 1.43934 2.93934C1.72064 2.65804 2.10218 2.5 2.5 2.5H11.5C11.8978 2.5 12.2794 2.65804 12.5607 2.93934C12.842 3.22064 13 3.60218 13 4V11.5M1 11.5C1 11.8978 1.15804 12.2794 1.43934 12.5607C1.72064 12.842 2.10218 13 2.5 13H11.5C11.8978 13 12.2794 12.842 12.5607 12.5607C12.842 12.2794 13 11.8978 13 11.5M1 11.5V6.5C1 6.10218 1.15804 5.72064 1.43934 5.43934C1.72064 5.15804 2.10218 5 2.5 5H11.5C11.8978 5 12.2794 5.15804 12.5607 5.43934C12.842 5.72064 13 6.10218 13 6.5V11.5M7 7.5H7.00533V7.50533H7V7.5ZM7 9H7.00533V9.00533H7V9ZM7 10.5H7.00533V10.5053H7V10.5ZM5.5 9H5.50533V9.00533H5.5V9ZM5.5 10.5H5.50533V10.5053H5.5V10.5ZM4 9H4.00533V9.00533H4V9ZM4 10.5H4.00533V10.5053H4V10.5ZM8.5 7.5H8.50533V7.50533H8.5V7.5ZM8.5 9H8.50533V9.00533H8.5V9ZM8.5 10.5H8.50533V10.5053H8.5V10.5ZM10 7.5H10.0053V7.50533H10V7.5ZM10 9H10.0053V9.00533H10V9Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg>
-										<span class="text-gray text-xs font-normal">May 14</span>
-									</div>
-									<div class="flex items-center space-x-2 pl-3">
-										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-											class="w-4 h-4">
-											<path stroke-linecap="round" stroke="#666666" stroke-linejoin="round"
-												d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-											<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-										</svg>
-										<span class="text-gray text-xs font-normal">45</span>
-									</div>
-								</div>
-								<div>
-									<h3 class="text-black font-playfair text-xl font-medium ">Mehnatsevar halqimiz bor
-										nima g’amimiz bor
-									</h3>
-								</div>
-							</div>
-							<div class="w-1/4 lg-down:w-48f md-down:w-full">
-								<div
-									class="bg-videos-5 bg-cover bg-center bg-no-repeat w-full h-52 relative cursor-pointer group bg-box">
-									<img class="w-full h-full -z-10 relative object-cover" src="images/videos-3.png" alt="">
-									<img
-										class="absolute z-10 translate-x-[-50%] translate-y-[-50%] inset-1/2 group-hover:scale-125 transition-all"
-										src="./images/icons/videos-play.svg" alt="">
-								</div>
-								<div class=" gap-4 mt-6 flex items-center divide-x divide-gray/20 pb-3">
-									<div class="flex items-center space-x-2">
+
+										<span>May 4</span>
+									</span>
+
+									<span class="flex items-center px-3 space-x-1.5">
 										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z"
-												stroke="#666666" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round"
-												stroke-linejoin="round"></path>
+											<path d="M1.35732 8.21467C1.31131 8.07639 1.31131 7.92694 1.35732 7.78867C2.28199 5.00667 4.90665 3 7.99999 3C11.092 3 13.7153 5.00467 14.642 7.78533C14.6887 7.92333 14.6887 8.07267 14.642 8.21133C13.718 10.9933 11.0933 13 7.99999 13C4.90799 13 2.28399 10.9953 1.35732 8.21467Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M10 8C10 8.53043 9.78929 9.03914 9.41421 9.41421C9.03914 9.78929 8.53043 10 8 10C7.46957 10 6.96086 9.78929 6.58579 9.41421C6.21071 9.03914 6 8.53043 6 8C6 7.46957 6.21071 6.96086 6.58579 6.58579C6.96086 6.21071 7.46957 6 8 6C8.53043 6 9.03914 6.21071 9.41421 6.58579C9.78929 6.96086 10 7.46957 10 8Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
 										</svg>
-										<span class="text-gray text-xs font-normal">Matbuot hizmati</span>
-									</div>
-									<div class="flex items-center space-x-2 line-box pl-3">
-										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-											stroke="currentColor" class="w-4 h-4">
-											<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round"
-												d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
-										</svg>
-										<span class="text-gray text-xs font-normal">May 14</span>
-									</div>
-									<div class="flex items-center space-x-2 pl-3">
-										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-											class="w-4 h-4">
-											<path stroke-linecap="round" stroke="#666666" stroke-linejoin="round"
-												d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-											<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-										</svg>
-										<span class="text-gray text-xs font-normal">45</span>
-									</div>
-								</div>
-								<div>
-									<h3 class="text-black font-playfair text-xl font-medium ">Nima sababdan Bomdod
-										namoziga uyg’onmaysiz?
-									</h3>
-								</div>
-							</div>
-							<div class="w-1/4 lg-down:w-48f md-down:w-full">
-								<div
-									class="bg-videos-6 bg-cover bg-center bg-no-repeat w-full h-52 relative cursor-pointer group bg-box">
-									<img class="w-full h-full -z-10 relative object-cover" src="images/videos-4.png" alt="">
-									<img
-										class="absolute z-10 translate-x-[-50%] translate-y-[-50%] inset-1/2 group-hover:scale-125 transition-all"
-										src="./images/icons/videos-play.svg" alt="">
-								</div>
-								<div class=" gap-4 mt-6 flex items-center divide-x divide-gray/20 pb-3">
-									<div class="flex items-center space-x-2">
-										<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M6.37867 2H3.5C3.10218 2 2.72064 2.15804 2.43934 2.43934C2.15804 2.72064 2 3.10218 2 3.5V6.37867C2 6.77667 2.158 7.15867 2.43933 7.43933L8.82667 13.8267C9.29267 14.2927 10.0133 14.408 10.5647 14.0467C11.9524 13.1378 13.1378 11.9524 14.0467 10.5647C14.408 10.0133 14.2927 9.29267 13.8267 8.82667L7.44 2.44C7.30069 2.30051 7.13524 2.18986 6.95313 2.11436C6.77102 2.03886 6.57581 2 6.37867 2Z"
-												stroke="#666666" stroke-linecap="round" stroke-linejoin="round"></path>
-											<path d="M4 4H4.00533V4.00533H4V4Z" stroke="black" stroke-width="1.5" stroke-linecap="round"
-												stroke-linejoin="round"></path>
-										</svg>
-										<span class="text-gray text-xs font-normal">Matbuot hizmati</span>
-									</div>
-									<div class="flex items-center space-x-2 line-box pl-3">
-										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-											stroke="currentColor" class="w-4 h-4">
-											<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round"
-												d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
-										</svg>
-										<span class="text-gray text-xs font-normal">May 14</span>
-									</div>
-									<div class="flex items-center space-x-2 pl-3">
-										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-											class="w-4 h-4">
-											<path stroke-linecap="round" stroke="#666" stroke-linejoin="round"
-												d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-											<path stroke="#666666" stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-										</svg>
-										<span class="text-gray text-xs font-normal">45</span>
-									</div>
-								</div>
-								<div>
-									<h3 class="text-black font-playfair text-xl font-medium ">Qadriyatlar tiklangan
-										yangi O’zbekiston
-										vatanim mening.</h3>
-								</div>
+
+										<span>865</span>
+									</span>
+								</p>
+								<h3 class="text-h4">Qadriyatlar tiklangan yangi O’zbekiston vatanim mening.</h3>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- videos-sec end -->
 
-			<!-- photos-sec start -->
-			<section class="main-photo pb-28">
-				<div class="container">
-					<div class="main__photo-wrap mt-[60px]">
-						<div class="flex items-center justify-between pb-9 sm-down:flex-col sm-down:items-start sm-down:space-y-2">
-							<h2 class="font-medium font-playfair text-4xl pt-1">Photohabarlar</h2>
-							<a href="#!" class="font-normal text-sm text-link underline hover:no-underline">Barchasini
-								ko’rish</a>
-						</div>
+			<section class="py-14">
+				<div class="container space-y-9">
+					<div class="flex items-center justify-between">
+						<h1 class="text-h2">Photohabarlar</h1>
+
+						<a href="#" class="text-link underline hover:no-underline">Barchasini ko'rish</a>
 					</div>
-					<div class="w-full gap-6 flex mt-[36px] lg-down:flex-wrap">
-						<div class="w-1/4 lg-down:w-48f md-down:w-full">
-							<img class="w-full" src="./images/videos-3.png" alt="">
-						</div>
-						<div class="w-1/4 lg-down:w-48f md-down:w-full">
-							<img class="w-full" src="./images/videos-1.png" alt="">
-						</div>
-						<div class="w-1/4 lg-down:w-48f md-down:w-full">
-							<img class="w-full" src="./images/videos-2.png" alt="">
-						</div>
-						<div class="w-1/4 lg-down:w-48f md-down:w-full">
-							<img class="w-full" src="./images/videos-4.png" alt="">
-						</div>
+
+					<div class="grid grid-cols-4 gap-6">
+						<a href="#">
+							<img src="img/homidjon-ismatbekov-bilan-suhbat-video.png" width="303" height="200" alt="homidjon ismatbekov bilan suhbat" class="w-full object-cover">
+						</a>
+
+						<a href="#">
+							<img src="img/mehnatsevar-halqimiz-bor-nima-gamimiz-bor-video.png" width="303" height="200" alt="mehnatsevar halqimiz bor nima g'amimiz bor" class="w-full object-cover">
+						</a>
+
+						<a href="#">
+							<img src="img/nima-sababdan-bomdod-namoziga-uygonmaysiz-video.png" width="303" height="200" alt="nima sababdan bomdod namoziga uyg'onmaysiz" class="w-full object-cover">
+						</a>
+
+						<a href="#">
+							<img src="img/qadriyatlar-tiklangan-yangi-ozbekiston-video.png" width="303" height="200" alt="qadriyatlar tilklangan yangi o'zbekiston vatanim mening" class="w-full object-cover">
+						</a>
+
+						<a href="#">
+							<img src="img/nima-sababdan-bomdod-namoziga-uygonmaysiz-video.png" width="303" height="200" alt="nima sababdan bomdod namoziga uyg'onmaysiz" class="w-full object-cover">
+						</a>
+
+						<a href="#">
+							<img src="img/qadriyatlar-tiklangan-yangi-ozbekiston-video.png" width="303" height="200" alt="qadriyatlar tilklangan yangi o'zbekiston vatanim mening" class="w-full object-cover">
+						</a>
+
+						<a href="#">
+							<img src="img/homidjon-ismatbekov-bilan-suhbat-video.png" width="303" height="200" alt="homidjon ismatbekov bilan suhbat" class="w-full object-cover">
+						</a>
+
+						<a href="#">
+							<img src="img/mehnatsevar-halqimiz-bor-nima-gamimiz-bor-video.png" width="303" height="200" alt="mehnatsevar halqimiz bor nima g'amimiz bor" class="w-full object-cover">
+						</a>
 					</div>
-					<div class="w-full flex gap-6 mt-6 lg-down:flex-wrap">
-						<div class="w-1/4 lg-down:w-48f md-down:w-full">
-							<img class="w-full" src="./images/videos-2.png" alt="">
-						</div>
-						<div class="w-1/4 lg-down:w-48f md-down:w-full">
-							<img class="w-full" src="./images/videos-4.png" alt="">
-						</div>
-						<div class="w-1/4 lg-down:w-48f md-down:w-full">
-							<img class="w-full" src="./images/videos-3.png" alt="">
-						</div>
-						<div class="w-1/4 lg-down:w-48f md-down:w-full">
-							<img class="w-full" src="./images/videos-1.png" alt="">
-						</div>
-					</div>
+				</div>
 			</section>
-			<!-- photos-sec end -->
-
 		</main>
-		<!-- main end -->
 
-		<!-- footer start -->
-		<footer class="footer bg-world-news-bg">
-			<div class="container">
-				<div class="flex pt-9 pb-9 md-up:flex-col md-up:justify-start md-up:items-start">
-					<div class="footer__left w-6/12 flex md-up:flex-col md-up:w-full">
-						<img class="max-md:w-14 md-up:ml-4 md-up:mb-3" src="./images/icons/footer-logo.svg" alt="" width="60px"
-							height="60px">
-						<div class="ml-4 md-up:justify-start md-up:items-start">
-							<p class="mb-3 text-gray text-sm font-normal">© 2016-2021, «Ислом ота» жомеъ масжидининг расмий web сайти.
-								Барча ҳуқуқлар ҳимояланган. </p>
-							<p class="mb-3 text-gray text-sm font-normal md-up:-mt-3 md-up:w-full">Сайтдан маълумот олинганда манба
-								кўрсатилиши шарт.</p>
-						</div>
-					</div>
-					<div class="footer__right flex flex-col	items-end text-right w-6/12 md-up:justify-start md-up:items-start	">
-						<div
-							class="text-xs font-normal flex flex-col items-end text-whitegray md-up:justify-start md-up:items-start md-up:ml-4 md-up:text-start  ">
-							<p class="text-sm text-gray font-normal ">
-								Манзил: Яшнобод тумани, Фарғона йўли кўчаси, 51 уй.</p>
-							<p class="text-sm text-gray font-normal">Телефон:
-								+99871 299 58 82.</p>
-						</div>
-						<div class="header-social__media-links flex items-center gap-4 mt-5 md-up:ml-4">
-							<a href="#!">
-								<img src="images/icons/facebook.svg" alt="">
-							</a>
-							<a href="#!">
-								<img src="images/icons/instagram.svg" alt="">
-							</a>
-							<a href="#!">
-								<img src="images/icons/telegram.svg" alt="">
-							</a>
-							<a href="#!">
-								<img src="images/icons/youtube.svg" alt="">
-							</a>
-						</div>
+		<footer class="footer py-14 bg-link/5 border-body-light/10 border-y">
+			<div class="container flex justify-between">
+				<div class="flex items-start space-x-4">
+					<img src="img/islomota-logo.png" width="60" height="60" alt="islomota.uz logo" class="shrink-0">
+
+					<div class="space-y-3">
+						<p>&copy;&nbsp;2016&mdash;2021, &laquo;Ислом ота&raquo; жомеъ масжидининг расмий web сайти. Барча ҳуқуқлар ҳимояланган.</p>
+
+						<p>Сайтдан маълумот олинганда манба кўрсатилиши шарт. </p>
 					</div>
 				</div>
+
+				<div class="text-right space-y-3">
+					<p>Манзил: Яшнобод тумани, Фарғона йўли кўчаси, 51 уй.<br>Телефон: +99871&nbsp;299&nbsp;58&nbsp;82.</p>
+					
+				</div>
+				
 			</div>
 		</footer>
-		<!-- footer end -->
 	</div>
-
-
-
-	<!-- js -->
-	<script src="js/swiper-bundle.min.js"></script>
-	<script src="js/script.js"></script>
-
 </body>
 
 </html>
